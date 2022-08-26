@@ -1,0 +1,16 @@
+solid 20210812_mouth4_case7
+facet normal -0 -1 -0
+outer loop
+vertex 3.160018 3.059154 1.25
+vertex 3.160018 3.059154 1.26
+vertex 3.120018 3.059154 1.26
+endloop
+endfacet
+facet normal 0 -1 0
+outer loop
+vertex 3.160018 3.059154 1.25
+vertex 3.120018 3.059154 1.26
+vertex 3.120018 3.059154 1.25
+endloop
+endfacet
+endsolid 20210812_mouth4_case7

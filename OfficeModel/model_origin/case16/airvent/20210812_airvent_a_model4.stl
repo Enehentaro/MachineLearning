@@ -1,0 +1,16 @@
+solid 20210812_airvent1_model4
+facet normal -0 0 -1
+outer loop
+vertex 2.675 2.325 2.6
+vertex 2.325 2.325 2.6
+vertex 2.675 2.675 2.6
+endloop
+endfacet
+facet normal -0 -0 -1
+outer loop
+vertex 2.675 2.675 2.6
+vertex 2.325 2.325 2.6
+vertex 2.325 2.675 2.6
+endloop
+endfacet
+endsolid 20210812_airvent1_model4
