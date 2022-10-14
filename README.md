@@ -2,7 +2,7 @@
 
 ## PointNetの検証
 - [移動不変性の検証に用いたモデル構成](https://user-images.githubusercontent.com/87505664/186805063-48a962df-7903-4b26-a02c-c95d6b2b35ba.png)
-- [不変性の検証に用いたモデル構成](https://user-images.githubusercontent.com/87505664/186805292-8f6294ab-6439-4942-a84f-4ddcc4eb2b0b.png)
+- [順序不変性の検証に用いたモデル構成](https://user-images.githubusercontent.com/87505664/186805292-8f6294ab-6439-4942-a84f-4ddcc4eb2b0b.png)
 
 
 ## 感染リスク予測
