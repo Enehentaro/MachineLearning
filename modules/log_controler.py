@@ -22,14 +22,16 @@ class ControlLog:
         
         return log_file_name, log_dir_path
     
-    def set_log(self):
+    def set_log(self, log_file_name=0, log_dir_path=0):
         #ロガー等の作成
-        log_file_name, log_dir_path = self.decide_filename()
+        #新しいログを出力するための参照先設定
+        if log_file_name == 0:
+            log_file_name, log_dir_path = self.decide_filename()
         
         self.logger = logging.getLogger("optuna")
         self.logger.setLevel(logging.INFO)
 
-        self.log_fhandler = logging.FileHandler(log_dir_path+log_file_name+".txt")
+        self.log_fhandler = logging.FileHandler(log_dir_path+log_file_name+".txt", mode="a")
         self.log_fhandler.setLevel(logging.INFO)
 
         self.logger.addHandler(self.log_fhandler)
