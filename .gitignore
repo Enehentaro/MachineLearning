@@ -131,3 +131,4 @@ dmypy.json
 # logs
 KerasTuner_log/
 tblogs/
+OptunaLog/
