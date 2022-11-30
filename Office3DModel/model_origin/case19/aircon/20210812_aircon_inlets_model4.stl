@@ -1,0 +1,58 @@
+solid 20210812_aircon_outlets_model4
+facet normal -0 -0.707106781186548 -0.707106781186548
+outer loop
+vertex 4.2 2.05 2.6
+vertex 4.2 2.15 2.5
+vertex 4.8 2.05 2.6
+endloop
+endfacet
+facet normal 0 -0.707106781186548 -0.707106781186548
+outer loop
+vertex 4.8 2.05 2.6
+vertex 4.2 2.15 2.5
+vertex 4.8 2.15 2.5
+endloop
+endfacet
+facet normal 0.707106781186546 0 -0.707106781186549
+outer loop
+vertex 4.95 2.2 2.6
+vertex 4.85 2.2 2.5
+vertex 4.95 2.8 2.6
+endloop
+endfacet
+facet normal 0.707106781186546 0 -0.707106781186549
+outer loop
+vertex 4.95 2.8 2.6
+vertex 4.85 2.2 2.5
+vertex 4.85 2.8 2.5
+endloop
+endfacet
+facet normal 0 0.707106781186548 -0.707106781186548
+outer loop
+vertex 4.8 2.95 2.6
+vertex 4.8 2.85 2.5
+vertex 4.2 2.95 2.6
+endloop
+endfacet
+facet normal 0 0.707106781186548 -0.707106781186548
+outer loop
+vertex 4.2 2.95 2.6
+vertex 4.8 2.85 2.5
+vertex 4.2 2.85 2.5
+endloop
+endfacet
+facet normal -0.707106781186546 0 -0.707106781186549
+outer loop
+vertex 4.05 2.8 2.6
+vertex 4.15 2.8 2.5
+vertex 4.05 2.2 2.6
+endloop
+endfacet
+facet normal -0.707106781186546 -0 -0.707106781186549
+outer loop
+vertex 4.05 2.2 2.6
+vertex 4.15 2.8 2.5
+vertex 4.15 2.2 2.5
+endloop
+endfacet
+endsolid 20210812_aircon_outlets_model4
