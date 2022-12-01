@@ -1,0 +1,16 @@
+solid 20210812_office_bottom_model2
+facet normal 0 -0 1
+outer loop
+vertex 0 0 0
+vertex 9 0 0
+vertex 9 4 0
+endloop
+endfacet
+facet normal 0 0 1
+outer loop
+vertex 0 0 0
+vertex 9 4 0
+vertex 0 4 0
+endloop
+endfacet
+endsolid 20210812_office_bottom_model2

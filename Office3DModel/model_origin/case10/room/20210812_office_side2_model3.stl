@@ -1,0 +1,16 @@
+solid 20210812_office_side2_model3
+facet normal -1 0 0
+outer loop
+vertex 7 6 0
+vertex 7 0 0
+vertex 7 6 2.6
+endloop
+endfacet
+facet normal -1 0 0
+outer loop
+vertex 7 6 2.6
+vertex 7 0 0
+vertex 7 0 2.6
+endloop
+endfacet
+endsolid 20210812_office_side2_model3

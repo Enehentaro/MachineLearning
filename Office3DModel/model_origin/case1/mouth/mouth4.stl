@@ -1,0 +1,16 @@
+solid mouth4
+facet normal -0 1 0
+outer loop
+vertex 2.864982 1.240846 1.25
+vertex 2.864982 1.240846 1.26
+vertex 2.904982 1.240846 1.26
+endloop
+endfacet
+facet normal 0 1 0
+outer loop
+vertex 2.864982 1.240846 1.25
+vertex 2.904982 1.240846 1.26
+vertex 2.904982 1.240846 1.25
+endloop
+endfacet
+endsolid mouth4

@@ -1,0 +1,16 @@
+solid 20210812_mouth1_case23
+facet normal -1 0 0
+outer loop
+vertex 5.935 4.4 1.25
+vertex 5.935 4.36 1.25
+vertex 5.935 4.4 1.26
+endloop
+endfacet
+facet normal -1 0 0
+outer loop
+vertex 5.935 4.4 1.26
+vertex 5.935 4.36 1.25
+vertex 5.935 4.36 1.26
+endloop
+endfacet
+endsolid 20210812_mouth1_case23

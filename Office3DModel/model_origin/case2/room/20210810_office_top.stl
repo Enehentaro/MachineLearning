@@ -1,0 +1,142 @@
+solid 20210810_office_top
+facet normal 0 0 -1
+outer loop
+vertex 6 5.5 2.6
+vertex 3.5 3.25 2.6
+vertex 3.175 4.125 2.6
+endloop
+endfacet
+facet normal -0 0 -1
+outer loop
+vertex 3.175 4.475 2.6
+vertex 6 5.5 2.6
+vertex 3.175 4.125 2.6
+endloop
+endfacet
+facet normal -0 0 -1
+outer loop
+vertex 0 5.5 2.6
+vertex 6 5.5 2.6
+vertex 2.825 4.475 2.6
+endloop
+endfacet
+facet normal 0 -0 -1
+outer loop
+vertex 3.175 4.475 2.6
+vertex 2.825 4.475 2.6
+vertex 6 5.5 2.6
+endloop
+endfacet
+facet normal 0 -0 -1
+outer loop
+vertex 0 0 2.6
+vertex 0 5.5 2.6
+vertex 2.825 4.125 2.6
+endloop
+endfacet
+facet normal 0 0 -1
+outer loop
+vertex 0 0 2.6
+vertex 2.825 4.125 2.6
+vertex 2.5 3.25 2.6
+endloop
+endfacet
+facet normal 0 -0 -1
+outer loop
+vertex 0 0 2.6
+vertex 2.5 2.25 2.6
+vertex 2.825 1.375 2.6
+endloop
+endfacet
+facet normal 0 0 -1
+outer loop
+vertex 2.825 4.475 2.6
+vertex 2.825 4.125 2.6
+vertex 0 5.5 2.6
+endloop
+endfacet
+facet normal 0 0 -1
+outer loop
+vertex 2.5 2.25 2.6
+vertex 0 0 2.6
+vertex 2.5 3.25 2.6
+endloop
+endfacet
+facet normal 0 0 -1
+outer loop
+vertex 2.825 1.025 2.6
+vertex 0 0 2.6
+vertex 2.825 1.375 2.6
+endloop
+endfacet
+facet normal 0 0 -1
+outer loop
+vertex 6 0 2.6
+vertex 0 0 2.6
+vertex 3.175 1.025 2.6
+endloop
+endfacet
+facet normal 0 0 -1
+outer loop
+vertex 6 5.5 2.6
+vertex 3.175 1.375 2.6
+vertex 3.5 2.25 2.6
+endloop
+endfacet
+facet normal 0 0 -1
+outer loop
+vertex 3.175 4.125 2.6
+vertex 2.5 3.25 2.6
+vertex 2.825 4.125 2.6
+endloop
+endfacet
+facet normal -0 0 -1
+outer loop
+vertex 2.825 1.025 2.6
+vertex 3.175 1.025 2.6
+vertex 0 0 2.6
+endloop
+endfacet
+facet normal 0 0 -1
+outer loop
+vertex 6 5.5 2.6
+vertex 6 0 2.6
+vertex 3.175 1.375 2.6
+endloop
+endfacet
+facet normal -0 0 -1
+outer loop
+vertex 3.5 3.25 2.6
+vertex 6 5.5 2.6
+vertex 3.5 2.25 2.6
+endloop
+endfacet
+facet normal 0 0 -1
+outer loop
+vertex 3.5 2.25 2.6
+vertex 2.825 1.375 2.6
+vertex 2.5 2.25 2.6
+endloop
+endfacet
+facet normal -0 0 -1
+outer loop
+vertex 2.825 1.375 2.6
+vertex 3.5 2.25 2.6
+vertex 3.175 1.375 2.6
+endloop
+endfacet
+facet normal -0 -0 -1
+outer loop
+vertex 3.175 1.025 2.6
+vertex 3.175 1.375 2.6
+vertex 6 0 2.6
+endloop
+endfacet
+facet normal -0 -0 -1
+outer loop
+vertex 2.5 3.25 2.6
+vertex 3.175 4.125 2.6
+vertex 3.5 3.25 2.6
+endloop
+endfacet
+endsolid 20210810_office_top
