@@ -1,0 +1,14 @@
+A new study created in RDB with name: Poly_Linear_112241
+Trial 0 failed because of the following error: MemoryError((235, 64512240), dtype('float64'))
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_13913/58937689.py", line 14, in __call__
+    X_poly = poly_model.fit_transform(self.X)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/base.py", line 867, in fit_transform
+    return self.fit(X, **fit_params).transform(X)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/preprocessing/_polynomial.py", line 432, in transform
+    XP = np.empty(
+numpy.core._exceptions._ArrayMemoryError: Unable to allocate 113. GiB for an array with shape (235, 64512240) and data type float64
+Trial 2 finished with value: 0.7728060333835753 and parameters: {'degree': 1}. Best is trial 2 with value: 0.7728060333835753.
+Trial 6 finished with value: 0.7332903237803265 and parameters: {'degree': 3}. Best is trial 2 with value: 0.7728060333835753.

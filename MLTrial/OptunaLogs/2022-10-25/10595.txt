@@ -1,0 +1,70 @@
+A new study created in RDB with name: Poly_Linear_10595
+Trial 0 failed because of the following error: NameError("name 'kwargs' is not defined")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_13913/1469675564.py", line 13, in __call__
+    model = PolynomialRegression(*args, **kwargs)
+NameError: name 'kwargs' is not defined
+A new study created in RDB with name: Poly_Linear_1107
+Trial 0 finished with value: 0.7728060333835753 and parameters: {'degree': 1}. Best is trial 0 with value: 0.7728060333835753.
+Trial 1 finished with value: 0.7728060333835753 and parameters: {'degree': 1}. Best is trial 0 with value: 0.7728060333835753.
+Trial 2 finished with value: -70906391237107.42 and parameters: {'degree': 6}. Best is trial 0 with value: 0.7728060333835753.
+A new study created in RDB with name: Poly_Linear_111456
+Trial 0 failed because of the following error: MemoryError((235, 20160075), dtype('float64'))
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_13913/58937689.py", line 14, in __call__
+    X_poly = poly_model.fit_transform(self.X)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/base.py", line 867, in fit_transform
+    return self.fit(X, **fit_params).transform(X)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/preprocessing/_polynomial.py", line 432, in transform
+    XP = np.empty(
+numpy.core._exceptions._ArrayMemoryError: Unable to allocate 35.3 GiB for an array with shape (235, 20160075) and data type float64
+A new study created in RDB with name: Poly_Linear_111554
+Trial 0 failed because of the following error: KeyboardInterrupt()
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_13913/58937689.py", line 24, in __call__
+    scores = cross_validate(estimator=model2, scoring=metrics,
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/model_selection/_validation.py", line 266, in cross_validate
+    results = parallel(
+  File "/usr/local/lib/python3.8/dist-packages/joblib/parallel.py", line 1046, in __call__
+    while self.dispatch_one_batch(iterator):
+  File "/usr/local/lib/python3.8/dist-packages/joblib/parallel.py", line 861, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "/usr/local/lib/python3.8/dist-packages/joblib/parallel.py", line 779, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+  File "/usr/local/lib/python3.8/dist-packages/joblib/_parallel_backends.py", line 208, in apply_async
+    result = ImmediateResult(func)
+  File "/usr/local/lib/python3.8/dist-packages/joblib/_parallel_backends.py", line 572, in __init__
+    self.results = batch()
+  File "/usr/local/lib/python3.8/dist-packages/joblib/parallel.py", line 262, in __call__
+    return [func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/joblib/parallel.py", line 262, in <listcomp>
+    return [func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/utils/fixes.py", line 117, in __call__
+    return self.function(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/model_selection/_validation.py", line 686, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/linear_model/_base.py", line 736, in fit
+    self.coef_, _, self.rank_, self.singular_ = linalg.lstsq(X, y)
+  File "/usr/local/lib/python3.8/dist-packages/scipy/linalg/_basic.py", line 1204, in lstsq
+    x, s, rank, info = lapack_func(a1, b1, lwork,
+KeyboardInterrupt
+A new study created in RDB with name: Poly_Linear_112241
+Trial 0 failed because of the following error: MemoryError((235, 64512240), dtype('float64'))
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_13913/58937689.py", line 14, in __call__
+    X_poly = poly_model.fit_transform(self.X)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/base.py", line 867, in fit_transform
+    return self.fit(X, **fit_params).transform(X)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/preprocessing/_polynomial.py", line 432, in transform
+    XP = np.empty(
+numpy.core._exceptions._ArrayMemoryError: Unable to allocate 113. GiB for an array with shape (235, 64512240) and data type float64
+Trial 2 finished with value: 0.7728060333835753 and parameters: {'degree': 1}. Best is trial 2 with value: 0.7728060333835753.
+Trial 6 finished with value: 0.7332903237803265 and parameters: {'degree': 3}. Best is trial 2 with value: 0.7728060333835753.

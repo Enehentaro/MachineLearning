@@ -1,0 +1,8 @@
+A new study created in RDB with name: MLP_84035
+Trial 0 failed because of the following error: AttributeError("'MLP' object has no attribute 'predict'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_76101/2662274010.py", line 55, in __call__
+    validate_pred = model.predict(validate_explanatory_variable)
+AttributeError: 'MLP' object has no attribute 'predict'

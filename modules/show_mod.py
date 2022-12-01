@@ -69,16 +69,14 @@ def show_residual_plot(train_x, train_y, test_x, test_y, figsize=[10, 8]):
     plt.tight_layout()
     plt.show()
     
-def show_office_residual_plot(train_x, train_y, test_x, test_y, office_list, figsize=[10, 8]):
-    xlim = [min(min(train_x), min(test_x))-5, max(max(train_x), max(test_x))+5]
+def show_office_residual_plot(train_x, train_y, test_x, test_y, office_list, figsize=[10, 8], xlim=[50, 250], ylim=[-60,120]):
+#     xlim = [min(min(train_x), min(test_x))-5, max(max(train_x), max(test_x))+5]
     fig= plt.figure(figsize=figsize)
-
-    plt.figure(figsize=[10, 8])
 
     #カラーマップ等の準備
     markers = ("s", "x", "o", "^", "v", "<", ">", "1", "2", "3", "4", "8")
     colors = ("red", "blue", "limegreen", "gray", "cyan", "black", "purple", "green",
-              "orange", "yellow", "crimson", "goldenrod", "orchid")
+              "orange", "yellow", "crimson", "goldenrod", "orchid", "khaki", "darkgray")
 
     for idx, target_office_name in enumerate(np.unique(office_list)):
         target_office_index = [i for i in range(office_list.shape[0]) if any(office_list[i] == target_office_name)]
@@ -91,5 +89,6 @@ def show_office_residual_plot(train_x, train_y, test_x, test_y, office_list, fig
     plt.legend(loc="best")
     plt.hlines(y=0, xmin=xlim[0], xmax=xlim[1], color="black", lw=2)
     plt.xlim(xlim)
+    plt.ylim(ylim)
     plt.tight_layout()
     plt.show()

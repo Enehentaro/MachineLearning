@@ -1,0 +1,217 @@
+A new study created in RDB with name: MLP_83429
+Trial 1 failed because of the following error: AttributeError("'MLP' object has no attribute 'add'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_76101/1401318789.py", line 53, in __call__
+    model.fit(tr_x=train_explanatory_variable, tr_y=train_objective_variable,
+  File "/tmp/ipykernel_76101/822481147.py", line 48, in fit
+    self.add.model(Dense(1, kernel_initializer=kernel_initializer))
+AttributeError: 'MLP' object has no attribute 'add'
+Trial 15 failed because of the following error: AttributeError("'MLP' object has no attribute 'add'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_76101/1401318789.py", line 53, in __call__
+    model.fit(tr_x=train_explanatory_variable, tr_y=train_objective_variable,
+  File "/tmp/ipykernel_76101/822481147.py", line 48, in fit
+    self.add.model(Dense(1, kernel_initializer=kernel_initializer))
+AttributeError: 'MLP' object has no attribute 'add'
+Trial 9 failed because of the following error: AttributeError("'MLP' object has no attribute 'add'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_76101/1401318789.py", line 53, in __call__
+    model.fit(tr_x=train_explanatory_variable, tr_y=train_objective_variable,
+  File "/tmp/ipykernel_76101/822481147.py", line 48, in fit
+    self.add.model(Dense(1, kernel_initializer=kernel_initializer))
+AttributeError: 'MLP' object has no attribute 'add'
+Trial 20 failed because of the following error: AttributeError("'MLP' object has no attribute 'add'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_76101/1401318789.py", line 53, in __call__
+    model.fit(tr_x=train_explanatory_variable, tr_y=train_objective_variable,
+  File "/tmp/ipykernel_76101/822481147.py", line 48, in fit
+    self.add.model(Dense(1, kernel_initializer=kernel_initializer))
+AttributeError: 'MLP' object has no attribute 'add'
+Trial 8 failed because of the following error: AttributeError("'MLP' object has no attribute 'add'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_76101/1401318789.py", line 53, in __call__
+    model.fit(tr_x=train_explanatory_variable, tr_y=train_objective_variable,
+  File "/tmp/ipykernel_76101/822481147.py", line 48, in fit
+    self.add.model(Dense(1, kernel_initializer=kernel_initializer))
+AttributeError: 'MLP' object has no attribute 'add'
+Trial 0 failed because of the following error: AttributeError("'MLP' object has no attribute 'add'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_76101/1401318789.py", line 53, in __call__
+    model.fit(tr_x=train_explanatory_variable, tr_y=train_objective_variable,
+  File "/tmp/ipykernel_76101/822481147.py", line 48, in fit
+    self.add.model(Dense(1, kernel_initializer=kernel_initializer))
+AttributeError: 'MLP' object has no attribute 'add'
+Trial 21 failed because of the following error: AttributeError("'MLP' object has no attribute 'add'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_76101/1401318789.py", line 53, in __call__
+    model.fit(tr_x=train_explanatory_variable, tr_y=train_objective_variable,
+  File "/tmp/ipykernel_76101/822481147.py", line 48, in fit
+    self.add.model(Dense(1, kernel_initializer=kernel_initializer))
+AttributeError: 'MLP' object has no attribute 'add'
+Trial 14 failed because of the following error: AttributeError("'MLP' object has no attribute 'add'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_76101/1401318789.py", line 53, in __call__
+    model.fit(tr_x=train_explanatory_variable, tr_y=train_objective_variable,
+  File "/tmp/ipykernel_76101/822481147.py", line 48, in fit
+    self.add.model(Dense(1, kernel_initializer=kernel_initializer))
+AttributeError: 'MLP' object has no attribute 'add'
+Trial 16 failed because of the following error: AttributeError("'MLP' object has no attribute 'add'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_76101/1401318789.py", line 53, in __call__
+    model.fit(tr_x=train_explanatory_variable, tr_y=train_objective_variable,
+  File "/tmp/ipykernel_76101/822481147.py", line 48, in fit
+    self.add.model(Dense(1, kernel_initializer=kernel_initializer))
+AttributeError: 'MLP' object has no attribute 'add'
+Trial 7 failed because of the following error: AttributeError("'MLP' object has no attribute 'add'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_76101/1401318789.py", line 53, in __call__
+    model.fit(tr_x=train_explanatory_variable, tr_y=train_objective_variable,
+  File "/tmp/ipykernel_76101/822481147.py", line 48, in fit
+    self.add.model(Dense(1, kernel_initializer=kernel_initializer))
+AttributeError: 'MLP' object has no attribute 'add'
+Trial 2 failed because of the following error: AttributeError("'MLP' object has no attribute 'add'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_76101/1401318789.py", line 53, in __call__
+    model.fit(tr_x=train_explanatory_variable, tr_y=train_objective_variable,
+  File "/tmp/ipykernel_76101/822481147.py", line 48, in fit
+    self.add.model(Dense(1, kernel_initializer=kernel_initializer))
+AttributeError: 'MLP' object has no attribute 'add'
+Trial 5 failed because of the following error: AttributeError("'MLP' object has no attribute 'add'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_76101/1401318789.py", line 53, in __call__
+    model.fit(tr_x=train_explanatory_variable, tr_y=train_objective_variable,
+  File "/tmp/ipykernel_76101/822481147.py", line 48, in fit
+    self.add.model(Dense(1, kernel_initializer=kernel_initializer))
+AttributeError: 'MLP' object has no attribute 'add'
+Trial 19 failed because of the following error: AttributeError("'MLP' object has no attribute 'add'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_76101/1401318789.py", line 53, in __call__
+    model.fit(tr_x=train_explanatory_variable, tr_y=train_objective_variable,
+  File "/tmp/ipykernel_76101/822481147.py", line 48, in fit
+    self.add.model(Dense(1, kernel_initializer=kernel_initializer))
+AttributeError: 'MLP' object has no attribute 'add'
+Trial 23 failed because of the following error: AttributeError("'MLP' object has no attribute 'add'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_76101/1401318789.py", line 53, in __call__
+    model.fit(tr_x=train_explanatory_variable, tr_y=train_objective_variable,
+  File "/tmp/ipykernel_76101/822481147.py", line 48, in fit
+    self.add.model(Dense(1, kernel_initializer=kernel_initializer))
+AttributeError: 'MLP' object has no attribute 'add'
+Trial 13 failed because of the following error: AttributeError("'MLP' object has no attribute 'add'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_76101/1401318789.py", line 53, in __call__
+    model.fit(tr_x=train_explanatory_variable, tr_y=train_objective_variable,
+  File "/tmp/ipykernel_76101/822481147.py", line 48, in fit
+    self.add.model(Dense(1, kernel_initializer=kernel_initializer))
+AttributeError: 'MLP' object has no attribute 'add'
+Trial 12 failed because of the following error: AttributeError("'MLP' object has no attribute 'add'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_76101/1401318789.py", line 53, in __call__
+    model.fit(tr_x=train_explanatory_variable, tr_y=train_objective_variable,
+  File "/tmp/ipykernel_76101/822481147.py", line 48, in fit
+    self.add.model(Dense(1, kernel_initializer=kernel_initializer))
+AttributeError: 'MLP' object has no attribute 'add'
+Trial 17 failed because of the following error: AttributeError("'MLP' object has no attribute 'add'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_76101/1401318789.py", line 53, in __call__
+    model.fit(tr_x=train_explanatory_variable, tr_y=train_objective_variable,
+  File "/tmp/ipykernel_76101/822481147.py", line 48, in fit
+    self.add.model(Dense(1, kernel_initializer=kernel_initializer))
+AttributeError: 'MLP' object has no attribute 'add'
+Trial 6 failed because of the following error: AttributeError("'MLP' object has no attribute 'add'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_76101/1401318789.py", line 53, in __call__
+    model.fit(tr_x=train_explanatory_variable, tr_y=train_objective_variable,
+  File "/tmp/ipykernel_76101/822481147.py", line 48, in fit
+    self.add.model(Dense(1, kernel_initializer=kernel_initializer))
+AttributeError: 'MLP' object has no attribute 'add'
+Trial 10 failed because of the following error: AttributeError("'MLP' object has no attribute 'add'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_76101/1401318789.py", line 53, in __call__
+    model.fit(tr_x=train_explanatory_variable, tr_y=train_objective_variable,
+  File "/tmp/ipykernel_76101/822481147.py", line 48, in fit
+    self.add.model(Dense(1, kernel_initializer=kernel_initializer))
+AttributeError: 'MLP' object has no attribute 'add'
+Trial 3 failed because of the following error: AttributeError("'MLP' object has no attribute 'add'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_76101/1401318789.py", line 53, in __call__
+    model.fit(tr_x=train_explanatory_variable, tr_y=train_objective_variable,
+  File "/tmp/ipykernel_76101/822481147.py", line 48, in fit
+    self.add.model(Dense(1, kernel_initializer=kernel_initializer))
+AttributeError: 'MLP' object has no attribute 'add'
+Trial 4 failed because of the following error: AttributeError("'MLP' object has no attribute 'add'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_76101/1401318789.py", line 53, in __call__
+    model.fit(tr_x=train_explanatory_variable, tr_y=train_objective_variable,
+  File "/tmp/ipykernel_76101/822481147.py", line 48, in fit
+    self.add.model(Dense(1, kernel_initializer=kernel_initializer))
+AttributeError: 'MLP' object has no attribute 'add'
+Trial 11 failed because of the following error: AttributeError("'MLP' object has no attribute 'add'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_76101/1401318789.py", line 53, in __call__
+    model.fit(tr_x=train_explanatory_variable, tr_y=train_objective_variable,
+  File "/tmp/ipykernel_76101/822481147.py", line 48, in fit
+    self.add.model(Dense(1, kernel_initializer=kernel_initializer))
+AttributeError: 'MLP' object has no attribute 'add'
+Trial 18 failed because of the following error: AttributeError("'MLP' object has no attribute 'add'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_76101/1401318789.py", line 53, in __call__
+    model.fit(tr_x=train_explanatory_variable, tr_y=train_objective_variable,
+  File "/tmp/ipykernel_76101/822481147.py", line 48, in fit
+    self.add.model(Dense(1, kernel_initializer=kernel_initializer))
+AttributeError: 'MLP' object has no attribute 'add'
+Trial 22 failed because of the following error: AttributeError("'MLP' object has no attribute 'add'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_76101/1401318789.py", line 53, in __call__
+    model.fit(tr_x=train_explanatory_variable, tr_y=train_objective_variable,
+  File "/tmp/ipykernel_76101/822481147.py", line 48, in fit
+    self.add.model(Dense(1, kernel_initializer=kernel_initializer))
+AttributeError: 'MLP' object has no attribute 'add'

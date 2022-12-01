@@ -1,0 +1,16 @@
+A new study created in RDB with name: MLP_8454
+Trial 0 failed because of the following error: ValueError('Input contains NaN.')
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_76101/2662274010.py", line 57, in __call__
+    scores.append(mean_squared_error(validate_objective_variable, validate_pred))
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/metrics/_regression.py", line 442, in mean_squared_error
+    y_type, y_true, y_pred, multioutput = _check_reg_targets(
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/metrics/_regression.py", line 102, in _check_reg_targets
+    y_pred = check_array(y_pred, ensure_2d=False, dtype=dtype)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/utils/validation.py", line 899, in check_array
+    _assert_all_finite(
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/utils/validation.py", line 146, in _assert_all_finite
+    raise ValueError(msg_err)
+ValueError: Input contains NaN.

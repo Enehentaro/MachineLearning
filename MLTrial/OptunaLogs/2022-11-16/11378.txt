@@ -1,0 +1,20 @@
+A new study created in RDB with name: MLP_11378
+Trial 0 finished with value: 886.6877823695083 and parameters: {'input_dropout': 0.0, 'hidden_layers': 3, 'hidden_units': 160, 'kernel_initializer': 'random_normal', 'hidden_activation': 'prelu', 'hidden_dropout': 0.15000000000000002, 'batch_norm': 'on', 'optimizer_type': 'rmsprop', 'lr': 0.009298891998367224, 'batch_size': 128}. Best is trial 0 with value: 886.6877823695083.
+Trial 1 finished with value: 183.67118108061885 and parameters: {'input_dropout': 0.0, 'hidden_layers': 4, 'hidden_units': 160, 'kernel_initializer': 'he_normal', 'hidden_activation': 'relu', 'hidden_dropout': 0.0, 'batch_norm': 'off', 'optimizer_type': 'rmsprop', 'lr': 0.0001562108381510216, 'batch_size': 32}. Best is trial 1 with value: 183.67118108061885.
+Trial 2 finished with value: 2526.3728138625443 and parameters: {'input_dropout': 0.2, 'hidden_layers': 3, 'hidden_units': 224, 'kernel_initializer': 'he_normal', 'hidden_activation': 'leaky_relu', 'hidden_dropout': 0.3, 'batch_norm': 'off', 'optimizer_type': 'adam', 'lr': 0.007020765131765868, 'batch_size': 64}. Best is trial 1 with value: 183.67118108061885.
+Trial 3 finished with value: 253.09103736661254 and parameters: {'input_dropout': 0.05, 'hidden_layers': 2, 'hidden_units': 224, 'kernel_initializer': 'he_normal', 'hidden_activation': 'prelu', 'hidden_dropout': 0.15000000000000002, 'batch_norm': 'off', 'optimizer_type': 'rmsprop', 'lr': 0.00031636941427312274, 'batch_size': 64}. Best is trial 1 with value: 183.67118108061885.
+Trial 4 failed because of the following error: ValueError('Input contains NaN.')
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_102620/2376586184.py", line 60, in __call__
+    scores.append(mean_squared_error(validate_objective_variable, validate_pred))
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/metrics/_regression.py", line 442, in mean_squared_error
+    y_type, y_true, y_pred, multioutput = _check_reg_targets(
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/metrics/_regression.py", line 102, in _check_reg_targets
+    y_pred = check_array(y_pred, ensure_2d=False, dtype=dtype)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/utils/validation.py", line 899, in check_array
+    _assert_all_finite(
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/utils/validation.py", line 146, in _assert_all_finite
+    raise ValueError(msg_err)
+ValueError: Input contains NaN.

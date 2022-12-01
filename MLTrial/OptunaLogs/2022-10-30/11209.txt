@@ -1,0 +1,24 @@
+A new study created in RDB with name: SVR_11209
+Trial 6 finished with value: -0.015403953514338386 and parameters: {'kernel': 'sigmoid', 'epsilon': 0.044295200104915056, 'degree': 3, 'C': 0.0012970321623902764}. Best is trial 6 with value: -0.015403953514338386.
+Trial 12 finished with value: -0.015994041161485485 and parameters: {'kernel': 'poly', 'epsilon': 0.7543302047370539, 'degree': 5, 'C': 0.001009827185468437}. Best is trial 6 with value: -0.015403953514338386.
+Trial 11 finished with value: -0.01592205824171473 and parameters: {'kernel': 'sigmoid', 'epsilon': 0.4713705164317812, 'degree': 6, 'C': 0.0005340421703921353}. Best is trial 10 with value: 0.07226731171964117.
+Trial 7 finished with value: -0.01626976853922344 and parameters: {'kernel': 'rbf', 'epsilon': 0.5058821539667091, 'degree': 4, 'C': 0.00015594701894293782}. Best is trial 10 with value: 0.07226731171964117.
+Trial 10 finished with value: 0.07226731171964117 and parameters: {'kernel': 'linear', 'epsilon': 0.24240493370896465, 'degree': 4, 'C': 0.004749964639865659}. Best is trial 14 with value: 0.5051424611221284.
+Trial 9 finished with value: -0.008423547928573982 and parameters: {'kernel': 'linear', 'epsilon': 0.07230323766472269, 'degree': 6, 'C': 0.00038590564479429486}. Best is trial 14 with value: 0.5051424611221284.
+Trial 19 finished with value: 0.04986649218497102 and parameters: {'kernel': 'sigmoid', 'epsilon': 0.4667546525732803, 'degree': 2, 'C': 0.09450126381050276}. Best is trial 14 with value: 0.5051424611221284.
+Trial 3 finished with value: -0.016238887845753523 and parameters: {'kernel': 'sigmoid', 'epsilon': 0.534118015808201, 'degree': 6, 'C': 0.0001911572265435547}. Best is trial 14 with value: 0.5051424611221284.
+Trial 18 finished with value: 0.3409848925267974 and parameters: {'kernel': 'linear', 'epsilon': 0.5096188330545905, 'degree': 6, 'C': 0.02951665052094677}. Best is trial 14 with value: 0.5051424611221284.
+Trial 20 finished with value: -0.015968525970590463 and parameters: {'kernel': 'rbf', 'epsilon': 0.6101125151474591, 'degree': 3, 'C': 0.000998761819976048}. Best is trial 14 with value: 0.5051424611221284.
+Trial 0 finished with value: -0.011036021288776721 and parameters: {'kernel': 'linear', 'epsilon': 0.664546095658947, 'degree': 3, 'C': 0.0002796782579083688}. Best is trial 16 with value: 0.5141875253646303.
+Trial 14 finished with value: 0.5051424611221284 and parameters: {'kernel': 'poly', 'epsilon': 0.9313125884919125, 'degree': 5, 'C': 2.7854550979585686}. Best is trial 14 with value: 0.5051424611221284.
+Trial 4 finished with value: 0.09078139903399945 and parameters: {'kernel': 'sigmoid', 'epsilon': 0.22331528879130447, 'degree': 3, 'C': 0.1596025709898461}. Best is trial 14 with value: 0.5051424611221284.
+Trial 16 finished with value: 0.5141875253646303 and parameters: {'kernel': 'poly', 'epsilon': 0.24029956558740695, 'degree': 5, 'C': 2.9114994333036734}. Best is trial 5 with value: 0.5144145096419447.
+Trial 8 finished with value: 0.013708253883154619 and parameters: {'kernel': 'sigmoid', 'epsilon': 0.10621194159122838, 'degree': 5, 'C': 0.0410499965440776}. Best is trial 5 with value: 0.5144145096419447.
+Trial 21 finished with value: -0.009015352820383326 and parameters: {'kernel': 'sigmoid', 'epsilon': 0.6563416839255792, 'degree': 2, 'C': 0.010499810622976408}. Best is trial 5 with value: 0.5144145096419447.
+Trial 17 finished with value: 0.38718917029475314 and parameters: {'kernel': 'sigmoid', 'epsilon': 0.9827210660799474, 'degree': 4, 'C': 1.1934559832804663}. Best is trial 5 with value: 0.5144145096419447.
+Trial 5 finished with value: 0.5144145096419447 and parameters: {'kernel': 'sigmoid', 'epsilon': 0.8387349106332711, 'degree': 3, 'C': 2.7977557428485986}. Best is trial 5 with value: 0.5144145096419447.
+Trial 13 finished with value: -0.016466397411275414 and parameters: {'kernel': 'poly', 'epsilon': 0.7848066645843838, 'degree': 4, 'C': 0.0006448148930609553}. Best is trial 16 with value: 0.5141875253646303.
+Trial 15 finished with value: 0.3809453710290428 and parameters: {'kernel': 'sigmoid', 'epsilon': 0.6078637191554874, 'degree': 2, 'C': 1.1593906032980428}. Best is trial 5 with value: 0.5144145096419447.
+Trial 22 finished with value: -0.016057225895033323 and parameters: {'kernel': 'poly', 'epsilon': 0.27274458166511806, 'degree': 6, 'C': 0.00039550672064678086}. Best is trial 5 with value: 0.5144145096419447.
+Trial 2 finished with value: 0.09579800774362911 and parameters: {'kernel': 'linear', 'epsilon': 0.43009769172937384, 'degree': 4, 'C': 0.0061474060482432915}. Best is trial 14 with value: 0.5051424611221284.
+Trial 1 finished with value: 0.06164724126828267 and parameters: {'kernel': 'linear', 'epsilon': 0.39117088896632357, 'degree': 3, 'C': 0.004123693812706031}. Best is trial 16 with value: 0.5141875253646303.

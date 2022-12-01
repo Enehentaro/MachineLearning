@@ -1,0 +1,4 @@
+A new study created in RDB with name: Poly_Linear_1107
+Trial 0 finished with value: 0.7728060333835753 and parameters: {'degree': 1}. Best is trial 0 with value: 0.7728060333835753.
+Trial 1 finished with value: 0.7728060333835753 and parameters: {'degree': 1}. Best is trial 0 with value: 0.7728060333835753.
+Trial 2 finished with value: -70906391237107.42 and parameters: {'degree': 6}. Best is trial 0 with value: 0.7728060333835753.

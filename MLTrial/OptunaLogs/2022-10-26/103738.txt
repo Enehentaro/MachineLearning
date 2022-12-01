@@ -1,0 +1,21 @@
+A new study created in RDB with name: Poly_Lasso_103738
+Trial 19 finished with value: 0.3176623692596296 and parameters: {'n_components': 2, 'degree': 1, 'alpha': 0.8032611166324183, 'max_iter': 30355}. Best is trial 13 with value: 0.5503773364058822.
+Trial 8 finished with value: 0.7811713447537167 and parameters: {'n_components': 5, 'degree': 4, 'alpha': 5.948007040605968, 'max_iter': 35669}. Best is trial 5 with value: 0.8233738554297144.
+Trial 9 finished with value: 0.45039187322145624 and parameters: {'n_components': 4, 'degree': 1, 'alpha': 0.37347498573840426, 'max_iter': 47228}. Best is trial 5 with value: 0.8233738554297144.
+Trial 13 finished with value: 0.5503773364058822 and parameters: {'n_components': 7, 'degree': 1, 'alpha': 0.13418885602195277, 'max_iter': 61667}. Best is trial 5 with value: 0.8233738554297144.
+Trial 6 finished with value: 0.8109902155940396 and parameters: {'n_components': 8, 'degree': 3, 'alpha': 0.28647657088661893, 'max_iter': 98914}. Best is trial 5 with value: 0.8233738554297144.
+Trial 12 finished with value: 0.45125459533000284 and parameters: {'n_components': 5, 'degree': 1, 'alpha': 0.0013164740240740175, 'max_iter': 8388}. Best is trial 5 with value: 0.8233738554297144.
+Trial 15 finished with value: 0.78379075227253 and parameters: {'n_components': 10, 'degree': 2, 'alpha': 5.954997621939576, 'max_iter': 93719}. Best is trial 5 with value: 0.8233738554297144.
+Trial 3 finished with value: 0.810589213444693 and parameters: {'n_components': 10, 'degree': 3, 'alpha': 0.31365112113595833, 'max_iter': 6631}. Best is trial 5 with value: 0.8233738554297144.
+Trial 0 finished with value: 0.8147741984815993 and parameters: {'n_components': 9, 'degree': 4, 'alpha': 0.9177302760397806, 'max_iter': 41767}. Best is trial 5 with value: 0.8233738554297144.
+Trial 5 finished with value: 0.8233738554297144 and parameters: {'n_components': 11, 'degree': 2, 'alpha': 0.0209989636827155, 'max_iter': 39855}. Best is trial 5 with value: 0.8233738554297144.
+Trial 16 finished with value: 0.821209159510401 and parameters: {'n_components': 10, 'degree': 2, 'alpha': 0.04791321506885778, 'max_iter': 81881}. Best is trial 5 with value: 0.8233738554297144.
+Trial 2 finished with value: 0.7477444793500779 and parameters: {'n_components': 8, 'degree': 4, 'alpha': 0.10716169849371772, 'max_iter': 5178}. Best is trial 5 with value: 0.8233738554297144.
+Trial 11 finished with value: 0.7693589257708056 and parameters: {'n_components': 6, 'degree': 4, 'alpha': 1.2744533909768216, 'max_iter': 60940}. Best is trial 5 with value: 0.8233738554297144.
+Trial 4 finished with value: 0.8169273254134655 and parameters: {'n_components': 9, 'degree': 5, 'alpha': 3.940093315331614, 'max_iter': 69610}. Best is trial 5 with value: 0.8233738554297144.
+Trial 7 finished with value: 0.7757225591629022 and parameters: {'n_components': 4, 'degree': 4, 'alpha': 0.06584013365877515, 'max_iter': 15149}. Best is trial 5 with value: 0.8233738554297144.
+Trial 17 finished with value: 0.8086561854305814 and parameters: {'n_components': 9, 'degree': 5, 'alpha': 3.220638128875512, 'max_iter': 98725}. Best is trial 5 with value: 0.8233738554297144.
+Trial 1 finished with value: 0.632760384117782 and parameters: {'n_components': 9, 'degree': 4, 'alpha': 0.028605311325972157, 'max_iter': 47444}. Best is trial 5 with value: 0.8233738554297144.
+Trial 14 finished with value: 0.6081571085817924 and parameters: {'n_components': 7, 'degree': 5, 'alpha': 0.00018043262193724726, 'max_iter': 46869}. Best is trial 5 with value: 0.8233738554297144.
+Trial 18 finished with value: 0.3282414497659123 and parameters: {'n_components': 11, 'degree': 4, 'alpha': 0.000772878785962848, 'max_iter': 59817}. Best is trial 5 with value: 0.8233738554297144.
+Trial 10 finished with value: 0.6158271619803234 and parameters: {'n_components': 7, 'degree': 5, 'alpha': 0.006718610083256653, 'max_iter': 98004}. Best is trial 5 with value: 0.8233738554297144.

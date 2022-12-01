@@ -1,0 +1,7 @@
+A new study created in RDB with name: no-name-f48b5c51-1538-48c9-8a9a-7dac8ae83b9d
+Trial 0 finished with value: 0.771771818820841 and parameters: {'alpha': 0.023122500659984276, 'max_iter': 34620}. Best is trial 0 with value: 0.771771818820841.
+Trial 1 finished with value: 0.7769669831336589 and parameters: {'alpha': 1.0606455500165641, 'max_iter': 4587}. Best is trial 1 with value: 0.7769669831336589.
+Trial 2 finished with value: 0.7136949954420896 and parameters: {'alpha': 4.824687074861504, 'max_iter': 81954}. Best is trial 1 with value: 0.7769669831336589.
+Trial 3 finished with value: 0.7744318872154217 and parameters: {'alpha': 0.15299973058702718, 'max_iter': 17090}. Best is trial 1 with value: 0.7769669831336589.
+Trial 4 finished with value: 0.7777858246222842 and parameters: {'alpha': 0.9165718421541506, 'max_iter': 52742}. Best is trial 4 with value: 0.7777858246222842.
+Trial 5 finished with value: 0.7712688662079863 and parameters: {'alpha': 0.00018196528014735144, 'max_iter': 73143}. Best is trial 4 with value: 0.7777858246222842.

@@ -1,0 +1,361 @@
+A new study created in RDB with name: MLP_858
+Trial 14 failed because of the following error: ValueError('CategoricalDistribution does not support dynamic value space.')
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_76101/3693888185.py", line 21, in __call__
+    "optimizer" : trial.suggest_categorical("optimizer", [
+  File "/usr/local/lib/python3.8/dist-packages/optuna/trial/_trial.py", line 371, in suggest_categorical
+    return self._suggest(name, CategoricalDistribution(choices=choices))
+  File "/usr/local/lib/python3.8/dist-packages/optuna/trial/_trial.py", line 600, in _suggest
+    storage.set_trial_param(trial_id, name, param_value_in_internal_repr, distribution)
+  File "/usr/local/lib/python3.8/dist-packages/optuna/storages/_cached_storage.py", line 209, in set_trial_param
+    distributions.check_distribution_compatibility(cached_dist, distribution)
+  File "/usr/local/lib/python3.8/dist-packages/optuna/distributions.py", line 653, in check_distribution_compatibility
+    raise ValueError(
+ValueError: CategoricalDistribution does not support dynamic value space.
+Trial 19 failed because of the following error: ValueError('CategoricalDistribution does not support dynamic value space.')
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_76101/3693888185.py", line 21, in __call__
+    "optimizer" : trial.suggest_categorical("optimizer", [
+  File "/usr/local/lib/python3.8/dist-packages/optuna/trial/_trial.py", line 371, in suggest_categorical
+    return self._suggest(name, CategoricalDistribution(choices=choices))
+  File "/usr/local/lib/python3.8/dist-packages/optuna/trial/_trial.py", line 600, in _suggest
+    storage.set_trial_param(trial_id, name, param_value_in_internal_repr, distribution)
+  File "/usr/local/lib/python3.8/dist-packages/optuna/storages/_cached_storage.py", line 209, in set_trial_param
+    distributions.check_distribution_compatibility(cached_dist, distribution)
+  File "/usr/local/lib/python3.8/dist-packages/optuna/distributions.py", line 653, in check_distribution_compatibility
+    raise ValueError(
+ValueError: CategoricalDistribution does not support dynamic value space.
+Trial 15 failed because of the following error: ValueError('CategoricalDistribution does not support dynamic value space.')
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_76101/3693888185.py", line 21, in __call__
+    "optimizer" : trial.suggest_categorical("optimizer", [
+  File "/usr/local/lib/python3.8/dist-packages/optuna/trial/_trial.py", line 371, in suggest_categorical
+    return self._suggest(name, CategoricalDistribution(choices=choices))
+  File "/usr/local/lib/python3.8/dist-packages/optuna/trial/_trial.py", line 600, in _suggest
+    storage.set_trial_param(trial_id, name, param_value_in_internal_repr, distribution)
+  File "/usr/local/lib/python3.8/dist-packages/optuna/storages/_cached_storage.py", line 209, in set_trial_param
+    distributions.check_distribution_compatibility(cached_dist, distribution)
+  File "/usr/local/lib/python3.8/dist-packages/optuna/distributions.py", line 653, in check_distribution_compatibility
+    raise ValueError(
+ValueError: CategoricalDistribution does not support dynamic value space.
+Trial 11 failed because of the following error: ValueError('CategoricalDistribution does not support dynamic value space.')
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_76101/3693888185.py", line 21, in __call__
+    "optimizer" : trial.suggest_categorical("optimizer", [
+  File "/usr/local/lib/python3.8/dist-packages/optuna/trial/_trial.py", line 371, in suggest_categorical
+    return self._suggest(name, CategoricalDistribution(choices=choices))
+  File "/usr/local/lib/python3.8/dist-packages/optuna/trial/_trial.py", line 600, in _suggest
+    storage.set_trial_param(trial_id, name, param_value_in_internal_repr, distribution)
+  File "/usr/local/lib/python3.8/dist-packages/optuna/storages/_cached_storage.py", line 209, in set_trial_param
+    distributions.check_distribution_compatibility(cached_dist, distribution)
+  File "/usr/local/lib/python3.8/dist-packages/optuna/distributions.py", line 653, in check_distribution_compatibility
+    raise ValueError(
+ValueError: CategoricalDistribution does not support dynamic value space.
+Trial 0 failed because of the following error: ValueError('CategoricalDistribution does not support dynamic value space.')
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_76101/3693888185.py", line 21, in __call__
+    "optimizer" : trial.suggest_categorical("optimizer", [
+  File "/usr/local/lib/python3.8/dist-packages/optuna/trial/_trial.py", line 371, in suggest_categorical
+    return self._suggest(name, CategoricalDistribution(choices=choices))
+  File "/usr/local/lib/python3.8/dist-packages/optuna/trial/_trial.py", line 600, in _suggest
+    storage.set_trial_param(trial_id, name, param_value_in_internal_repr, distribution)
+  File "/usr/local/lib/python3.8/dist-packages/optuna/storages/_cached_storage.py", line 209, in set_trial_param
+    distributions.check_distribution_compatibility(cached_dist, distribution)
+  File "/usr/local/lib/python3.8/dist-packages/optuna/distributions.py", line 653, in check_distribution_compatibility
+    raise ValueError(
+ValueError: CategoricalDistribution does not support dynamic value space.
+Trial 4 failed because of the following error: ValueError('CategoricalDistribution does not support dynamic value space.')
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_76101/3693888185.py", line 21, in __call__
+    "optimizer" : trial.suggest_categorical("optimizer", [
+  File "/usr/local/lib/python3.8/dist-packages/optuna/trial/_trial.py", line 371, in suggest_categorical
+    return self._suggest(name, CategoricalDistribution(choices=choices))
+  File "/usr/local/lib/python3.8/dist-packages/optuna/trial/_trial.py", line 600, in _suggest
+    storage.set_trial_param(trial_id, name, param_value_in_internal_repr, distribution)
+  File "/usr/local/lib/python3.8/dist-packages/optuna/storages/_cached_storage.py", line 209, in set_trial_param
+    distributions.check_distribution_compatibility(cached_dist, distribution)
+  File "/usr/local/lib/python3.8/dist-packages/optuna/distributions.py", line 653, in check_distribution_compatibility
+    raise ValueError(
+ValueError: CategoricalDistribution does not support dynamic value space.
+Trial 6 failed because of the following error: ValueError('CategoricalDistribution does not support dynamic value space.')
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_76101/3693888185.py", line 21, in __call__
+    "optimizer" : trial.suggest_categorical("optimizer", [
+  File "/usr/local/lib/python3.8/dist-packages/optuna/trial/_trial.py", line 371, in suggest_categorical
+    return self._suggest(name, CategoricalDistribution(choices=choices))
+  File "/usr/local/lib/python3.8/dist-packages/optuna/trial/_trial.py", line 600, in _suggest
+    storage.set_trial_param(trial_id, name, param_value_in_internal_repr, distribution)
+  File "/usr/local/lib/python3.8/dist-packages/optuna/storages/_cached_storage.py", line 209, in set_trial_param
+    distributions.check_distribution_compatibility(cached_dist, distribution)
+  File "/usr/local/lib/python3.8/dist-packages/optuna/distributions.py", line 653, in check_distribution_compatibility
+    raise ValueError(
+ValueError: CategoricalDistribution does not support dynamic value space.
+Trial 3 failed because of the following error: ValueError('CategoricalDistribution does not support dynamic value space.')
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_76101/3693888185.py", line 21, in __call__
+    "optimizer" : trial.suggest_categorical("optimizer", [
+  File "/usr/local/lib/python3.8/dist-packages/optuna/trial/_trial.py", line 371, in suggest_categorical
+    return self._suggest(name, CategoricalDistribution(choices=choices))
+  File "/usr/local/lib/python3.8/dist-packages/optuna/trial/_trial.py", line 600, in _suggest
+    storage.set_trial_param(trial_id, name, param_value_in_internal_repr, distribution)
+  File "/usr/local/lib/python3.8/dist-packages/optuna/storages/_cached_storage.py", line 209, in set_trial_param
+    distributions.check_distribution_compatibility(cached_dist, distribution)
+  File "/usr/local/lib/python3.8/dist-packages/optuna/distributions.py", line 653, in check_distribution_compatibility
+    raise ValueError(
+ValueError: CategoricalDistribution does not support dynamic value space.
+Trial 9 failed because of the following error: ValueError('CategoricalDistribution does not support dynamic value space.')
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_76101/3693888185.py", line 21, in __call__
+    "optimizer" : trial.suggest_categorical("optimizer", [
+  File "/usr/local/lib/python3.8/dist-packages/optuna/trial/_trial.py", line 371, in suggest_categorical
+    return self._suggest(name, CategoricalDistribution(choices=choices))
+  File "/usr/local/lib/python3.8/dist-packages/optuna/trial/_trial.py", line 600, in _suggest
+    storage.set_trial_param(trial_id, name, param_value_in_internal_repr, distribution)
+  File "/usr/local/lib/python3.8/dist-packages/optuna/storages/_cached_storage.py", line 209, in set_trial_param
+    distributions.check_distribution_compatibility(cached_dist, distribution)
+  File "/usr/local/lib/python3.8/dist-packages/optuna/distributions.py", line 653, in check_distribution_compatibility
+    raise ValueError(
+ValueError: CategoricalDistribution does not support dynamic value space.
+Trial 5 failed because of the following error: ValueError('CategoricalDistribution does not support dynamic value space.')
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_76101/3693888185.py", line 21, in __call__
+    "optimizer" : trial.suggest_categorical("optimizer", [
+  File "/usr/local/lib/python3.8/dist-packages/optuna/trial/_trial.py", line 371, in suggest_categorical
+    return self._suggest(name, CategoricalDistribution(choices=choices))
+  File "/usr/local/lib/python3.8/dist-packages/optuna/trial/_trial.py", line 600, in _suggest
+    storage.set_trial_param(trial_id, name, param_value_in_internal_repr, distribution)
+  File "/usr/local/lib/python3.8/dist-packages/optuna/storages/_cached_storage.py", line 209, in set_trial_param
+    distributions.check_distribution_compatibility(cached_dist, distribution)
+  File "/usr/local/lib/python3.8/dist-packages/optuna/distributions.py", line 653, in check_distribution_compatibility
+    raise ValueError(
+ValueError: CategoricalDistribution does not support dynamic value space.
+Trial 12 failed because of the following error: ValueError('CategoricalDistribution does not support dynamic value space.')
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_76101/3693888185.py", line 21, in __call__
+    "optimizer" : trial.suggest_categorical("optimizer", [
+  File "/usr/local/lib/python3.8/dist-packages/optuna/trial/_trial.py", line 371, in suggest_categorical
+    return self._suggest(name, CategoricalDistribution(choices=choices))
+  File "/usr/local/lib/python3.8/dist-packages/optuna/trial/_trial.py", line 600, in _suggest
+    storage.set_trial_param(trial_id, name, param_value_in_internal_repr, distribution)
+  File "/usr/local/lib/python3.8/dist-packages/optuna/storages/_cached_storage.py", line 209, in set_trial_param
+    distributions.check_distribution_compatibility(cached_dist, distribution)
+  File "/usr/local/lib/python3.8/dist-packages/optuna/distributions.py", line 653, in check_distribution_compatibility
+    raise ValueError(
+ValueError: CategoricalDistribution does not support dynamic value space.
+Trial 2 failed because of the following error: TypeError("add() got an unexpected keyword argument 'input_shape'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_76101/3693888185.py", line 56, in __call__
+    model.fit(tr_x=train_explanatory_variable, tr_y=train_objective_variable,
+  File "/tmp/ipykernel_76101/3255252886.py", line 25, in fit
+    self.model.add(Dropout(rate=input_dropout), input_shape=(tr_x.shape[1],))
+  File "/usr/local/lib/python3.8/dist-packages/tensorflow/python/training/tracking/base.py", line 587, in _method_wrapper
+    result = method(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/keras/utils/traceback_utils.py", line 67, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/usr/local/lib/python3.8/dist-packages/keras/utils/traceback_utils.py", line 64, in error_handler
+    return fn(*args, **kwargs)
+TypeError: add() got an unexpected keyword argument 'input_shape'
+Trial 1 failed because of the following error: ValueError('CategoricalDistribution does not support dynamic value space.')
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_76101/3693888185.py", line 21, in __call__
+    "optimizer" : trial.suggest_categorical("optimizer", [
+  File "/usr/local/lib/python3.8/dist-packages/optuna/trial/_trial.py", line 371, in suggest_categorical
+    return self._suggest(name, CategoricalDistribution(choices=choices))
+  File "/usr/local/lib/python3.8/dist-packages/optuna/trial/_trial.py", line 600, in _suggest
+    storage.set_trial_param(trial_id, name, param_value_in_internal_repr, distribution)
+  File "/usr/local/lib/python3.8/dist-packages/optuna/storages/_cached_storage.py", line 209, in set_trial_param
+    distributions.check_distribution_compatibility(cached_dist, distribution)
+  File "/usr/local/lib/python3.8/dist-packages/optuna/distributions.py", line 653, in check_distribution_compatibility
+    raise ValueError(
+ValueError: CategoricalDistribution does not support dynamic value space.
+Trial 21 failed because of the following error: ValueError('CategoricalDistribution does not support dynamic value space.')
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_76101/3693888185.py", line 21, in __call__
+    "optimizer" : trial.suggest_categorical("optimizer", [
+  File "/usr/local/lib/python3.8/dist-packages/optuna/trial/_trial.py", line 371, in suggest_categorical
+    return self._suggest(name, CategoricalDistribution(choices=choices))
+  File "/usr/local/lib/python3.8/dist-packages/optuna/trial/_trial.py", line 600, in _suggest
+    storage.set_trial_param(trial_id, name, param_value_in_internal_repr, distribution)
+  File "/usr/local/lib/python3.8/dist-packages/optuna/storages/_cached_storage.py", line 209, in set_trial_param
+    distributions.check_distribution_compatibility(cached_dist, distribution)
+  File "/usr/local/lib/python3.8/dist-packages/optuna/distributions.py", line 653, in check_distribution_compatibility
+    raise ValueError(
+ValueError: CategoricalDistribution does not support dynamic value space.
+Trial 23 failed because of the following error: ValueError('CategoricalDistribution does not support dynamic value space.')
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_76101/3693888185.py", line 21, in __call__
+    "optimizer" : trial.suggest_categorical("optimizer", [
+  File "/usr/local/lib/python3.8/dist-packages/optuna/trial/_trial.py", line 371, in suggest_categorical
+    return self._suggest(name, CategoricalDistribution(choices=choices))
+  File "/usr/local/lib/python3.8/dist-packages/optuna/trial/_trial.py", line 600, in _suggest
+    storage.set_trial_param(trial_id, name, param_value_in_internal_repr, distribution)
+  File "/usr/local/lib/python3.8/dist-packages/optuna/storages/_cached_storage.py", line 209, in set_trial_param
+    distributions.check_distribution_compatibility(cached_dist, distribution)
+  File "/usr/local/lib/python3.8/dist-packages/optuna/distributions.py", line 653, in check_distribution_compatibility
+    raise ValueError(
+ValueError: CategoricalDistribution does not support dynamic value space.
+Trial 7 failed because of the following error: ValueError('CategoricalDistribution does not support dynamic value space.')
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_76101/3693888185.py", line 21, in __call__
+    "optimizer" : trial.suggest_categorical("optimizer", [
+  File "/usr/local/lib/python3.8/dist-packages/optuna/trial/_trial.py", line 371, in suggest_categorical
+    return self._suggest(name, CategoricalDistribution(choices=choices))
+  File "/usr/local/lib/python3.8/dist-packages/optuna/trial/_trial.py", line 600, in _suggest
+    storage.set_trial_param(trial_id, name, param_value_in_internal_repr, distribution)
+  File "/usr/local/lib/python3.8/dist-packages/optuna/storages/_cached_storage.py", line 209, in set_trial_param
+    distributions.check_distribution_compatibility(cached_dist, distribution)
+  File "/usr/local/lib/python3.8/dist-packages/optuna/distributions.py", line 653, in check_distribution_compatibility
+    raise ValueError(
+ValueError: CategoricalDistribution does not support dynamic value space.
+Trial 22 failed because of the following error: ValueError('CategoricalDistribution does not support dynamic value space.')
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_76101/3693888185.py", line 21, in __call__
+    "optimizer" : trial.suggest_categorical("optimizer", [
+  File "/usr/local/lib/python3.8/dist-packages/optuna/trial/_trial.py", line 371, in suggest_categorical
+    return self._suggest(name, CategoricalDistribution(choices=choices))
+  File "/usr/local/lib/python3.8/dist-packages/optuna/trial/_trial.py", line 600, in _suggest
+    storage.set_trial_param(trial_id, name, param_value_in_internal_repr, distribution)
+  File "/usr/local/lib/python3.8/dist-packages/optuna/storages/_cached_storage.py", line 209, in set_trial_param
+    distributions.check_distribution_compatibility(cached_dist, distribution)
+  File "/usr/local/lib/python3.8/dist-packages/optuna/distributions.py", line 653, in check_distribution_compatibility
+    raise ValueError(
+ValueError: CategoricalDistribution does not support dynamic value space.
+Trial 17 failed because of the following error: ValueError('CategoricalDistribution does not support dynamic value space.')
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_76101/3693888185.py", line 21, in __call__
+    "optimizer" : trial.suggest_categorical("optimizer", [
+  File "/usr/local/lib/python3.8/dist-packages/optuna/trial/_trial.py", line 371, in suggest_categorical
+    return self._suggest(name, CategoricalDistribution(choices=choices))
+  File "/usr/local/lib/python3.8/dist-packages/optuna/trial/_trial.py", line 600, in _suggest
+    storage.set_trial_param(trial_id, name, param_value_in_internal_repr, distribution)
+  File "/usr/local/lib/python3.8/dist-packages/optuna/storages/_cached_storage.py", line 209, in set_trial_param
+    distributions.check_distribution_compatibility(cached_dist, distribution)
+  File "/usr/local/lib/python3.8/dist-packages/optuna/distributions.py", line 653, in check_distribution_compatibility
+    raise ValueError(
+ValueError: CategoricalDistribution does not support dynamic value space.
+Trial 8 failed because of the following error: ValueError('CategoricalDistribution does not support dynamic value space.')
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_76101/3693888185.py", line 21, in __call__
+    "optimizer" : trial.suggest_categorical("optimizer", [
+  File "/usr/local/lib/python3.8/dist-packages/optuna/trial/_trial.py", line 371, in suggest_categorical
+    return self._suggest(name, CategoricalDistribution(choices=choices))
+  File "/usr/local/lib/python3.8/dist-packages/optuna/trial/_trial.py", line 600, in _suggest
+    storage.set_trial_param(trial_id, name, param_value_in_internal_repr, distribution)
+  File "/usr/local/lib/python3.8/dist-packages/optuna/storages/_cached_storage.py", line 209, in set_trial_param
+    distributions.check_distribution_compatibility(cached_dist, distribution)
+  File "/usr/local/lib/python3.8/dist-packages/optuna/distributions.py", line 653, in check_distribution_compatibility
+    raise ValueError(
+ValueError: CategoricalDistribution does not support dynamic value space.
+Trial 16 failed because of the following error: ValueError('CategoricalDistribution does not support dynamic value space.')
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_76101/3693888185.py", line 21, in __call__
+    "optimizer" : trial.suggest_categorical("optimizer", [
+  File "/usr/local/lib/python3.8/dist-packages/optuna/trial/_trial.py", line 371, in suggest_categorical
+    return self._suggest(name, CategoricalDistribution(choices=choices))
+  File "/usr/local/lib/python3.8/dist-packages/optuna/trial/_trial.py", line 600, in _suggest
+    storage.set_trial_param(trial_id, name, param_value_in_internal_repr, distribution)
+  File "/usr/local/lib/python3.8/dist-packages/optuna/storages/_cached_storage.py", line 209, in set_trial_param
+    distributions.check_distribution_compatibility(cached_dist, distribution)
+  File "/usr/local/lib/python3.8/dist-packages/optuna/distributions.py", line 653, in check_distribution_compatibility
+    raise ValueError(
+ValueError: CategoricalDistribution does not support dynamic value space.
+Trial 18 failed because of the following error: ValueError('CategoricalDistribution does not support dynamic value space.')
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_76101/3693888185.py", line 21, in __call__
+    "optimizer" : trial.suggest_categorical("optimizer", [
+  File "/usr/local/lib/python3.8/dist-packages/optuna/trial/_trial.py", line 371, in suggest_categorical
+    return self._suggest(name, CategoricalDistribution(choices=choices))
+  File "/usr/local/lib/python3.8/dist-packages/optuna/trial/_trial.py", line 600, in _suggest
+    storage.set_trial_param(trial_id, name, param_value_in_internal_repr, distribution)
+  File "/usr/local/lib/python3.8/dist-packages/optuna/storages/_cached_storage.py", line 209, in set_trial_param
+    distributions.check_distribution_compatibility(cached_dist, distribution)
+  File "/usr/local/lib/python3.8/dist-packages/optuna/distributions.py", line 653, in check_distribution_compatibility
+    raise ValueError(
+ValueError: CategoricalDistribution does not support dynamic value space.
+Trial 20 failed because of the following error: ValueError('CategoricalDistribution does not support dynamic value space.')
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_76101/3693888185.py", line 21, in __call__
+    "optimizer" : trial.suggest_categorical("optimizer", [
+  File "/usr/local/lib/python3.8/dist-packages/optuna/trial/_trial.py", line 371, in suggest_categorical
+    return self._suggest(name, CategoricalDistribution(choices=choices))
+  File "/usr/local/lib/python3.8/dist-packages/optuna/trial/_trial.py", line 600, in _suggest
+    storage.set_trial_param(trial_id, name, param_value_in_internal_repr, distribution)
+  File "/usr/local/lib/python3.8/dist-packages/optuna/storages/_cached_storage.py", line 209, in set_trial_param
+    distributions.check_distribution_compatibility(cached_dist, distribution)
+  File "/usr/local/lib/python3.8/dist-packages/optuna/distributions.py", line 653, in check_distribution_compatibility
+    raise ValueError(
+ValueError: CategoricalDistribution does not support dynamic value space.
+Trial 10 failed because of the following error: ValueError('CategoricalDistribution does not support dynamic value space.')
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_76101/3693888185.py", line 21, in __call__
+    "optimizer" : trial.suggest_categorical("optimizer", [
+  File "/usr/local/lib/python3.8/dist-packages/optuna/trial/_trial.py", line 371, in suggest_categorical
+    return self._suggest(name, CategoricalDistribution(choices=choices))
+  File "/usr/local/lib/python3.8/dist-packages/optuna/trial/_trial.py", line 600, in _suggest
+    storage.set_trial_param(trial_id, name, param_value_in_internal_repr, distribution)
+  File "/usr/local/lib/python3.8/dist-packages/optuna/storages/_cached_storage.py", line 209, in set_trial_param
+    distributions.check_distribution_compatibility(cached_dist, distribution)
+  File "/usr/local/lib/python3.8/dist-packages/optuna/distributions.py", line 653, in check_distribution_compatibility
+    raise ValueError(
+ValueError: CategoricalDistribution does not support dynamic value space.
+Trial 13 failed because of the following error: ValueError('CategoricalDistribution does not support dynamic value space.')
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_76101/3693888185.py", line 21, in __call__
+    "optimizer" : trial.suggest_categorical("optimizer", [
+  File "/usr/local/lib/python3.8/dist-packages/optuna/trial/_trial.py", line 371, in suggest_categorical
+    return self._suggest(name, CategoricalDistribution(choices=choices))
+  File "/usr/local/lib/python3.8/dist-packages/optuna/trial/_trial.py", line 600, in _suggest
+    storage.set_trial_param(trial_id, name, param_value_in_internal_repr, distribution)
+  File "/usr/local/lib/python3.8/dist-packages/optuna/storages/_cached_storage.py", line 209, in set_trial_param
+    distributions.check_distribution_compatibility(cached_dist, distribution)
+  File "/usr/local/lib/python3.8/dist-packages/optuna/distributions.py", line 653, in check_distribution_compatibility
+    raise ValueError(
+ValueError: CategoricalDistribution does not support dynamic value space.

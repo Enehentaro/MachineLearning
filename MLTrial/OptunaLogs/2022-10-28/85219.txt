@@ -1,0 +1,5 @@
+A new study created in RDB with name: RandomForestRegressor_85219
+Trial 10 finished with value: 0.8185267738766564 and parameters: {'n_estimators': 25}. Best is trial 10 with value: 0.8185267738766564.
+Trial 21 finished with value: 0.8169526880701227 and parameters: {'n_estimators': 34}. Best is trial 10 with value: 0.8185267738766564.
+Trial 22 finished with value: 0.8210557593126072 and parameters: {'n_estimators': 42}. Best is trial 22 with value: 0.8210557593126072.
+Trial 18 finished with value: 0.8232869535971294 and parameters: {'n_estimators': 95}. Best is trial 18 with value: 0.8232869535971294.

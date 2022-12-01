@@ -1,0 +1,27 @@
+A new study created in RDB with name: PCADecisionTreeRegressor_8143
+Trial 2 finished with value: 0.7167958570116963 and parameters: {'n_components': 11, 'max_depth': 8}. Best is trial 2 with value: 0.7167958570116963.
+Trial 1 finished with value: 0.6196458169550967 and parameters: {'n_components': 6, 'max_depth': 9}. Best is trial 2 with value: 0.7167958570116963.
+Trial 9 finished with value: 0.30454195604046774 and parameters: {'n_components': 2, 'max_depth': 2}. Best is trial 2 with value: 0.7167958570116963.
+Trial 6 finished with value: 0.623159464204347 and parameters: {'n_components': 2, 'max_depth': 19}. Best is trial 2 with value: 0.7167958570116963.
+Trial 13 finished with value: 0.651327824012058 and parameters: {'n_components': 11, 'max_depth': 13}. Best is trial 2 with value: 0.7167958570116963.
+Trial 12 finished with value: 0.6123412354183475 and parameters: {'n_components': 5, 'max_depth': 9}. Best is trial 2 with value: 0.7167958570116963.
+Trial 18 finished with value: 0.6340455397999932 and parameters: {'n_components': 6, 'max_depth': 13}. Best is trial 2 with value: 0.7167958570116963.
+Trial 8 finished with value: 0.7005646149325374 and parameters: {'n_components': 8, 'max_depth': 10}. Best is trial 2 with value: 0.7167958570116963.
+Trial 14 finished with value: 0.6435147754204169 and parameters: {'n_components': 2, 'max_depth': 5}. Best is trial 11 with value: 0.7670193737382579.
+Trial 7 finished with value: 0.714770682983975 and parameters: {'n_components': 9, 'max_depth': 15}. Best is trial 11 with value: 0.7670193737382579.
+Trial 16 finished with value: 0.30454195604046796 and parameters: {'n_components': 2, 'max_depth': 2}. Best is trial 11 with value: 0.7670193737382579.
+Trial 22 finished with value: 0.6169210199099346 and parameters: {'n_components': 4, 'max_depth': 15}. Best is trial 11 with value: 0.7670193737382579.
+Trial 11 finished with value: 0.7670193737382579 and parameters: {'n_components': 11, 'max_depth': 6}. Best is trial 11 with value: 0.7670193737382579.
+Trial 4 finished with value: 0.13986192076866083 and parameters: {'n_components': 1, 'max_depth': 5}. Best is trial 11 with value: 0.7670193737382579.
+Trial 15 finished with value: 0.6672286352915566 and parameters: {'n_components': 8, 'max_depth': 16}. Best is trial 11 with value: 0.7670193737382579.
+Trial 20 finished with value: 0.7169937877642273 and parameters: {'n_components': 11, 'max_depth': 8}. Best is trial 11 with value: 0.7670193737382579.
+Trial 21 finished with value: 0.6755237373163704 and parameters: {'n_components': 6, 'max_depth': 5}. Best is trial 11 with value: 0.7670193737382579.
+Trial 0 finished with value: 0.6317996533475251 and parameters: {'n_components': 3, 'max_depth': 11}. Best is trial 11 with value: 0.7670193737382579.
+Trial 23 finished with value: 0.3868947156063623 and parameters: {'n_components': 1, 'max_depth': 20}. Best is trial 11 with value: 0.7670193737382579.
+Trial 10 finished with value: 0.6796306206334968 and parameters: {'n_components': 5, 'max_depth': 6}. Best is trial 11 with value: 0.7670193737382579.
+Trial 3 finished with value: 0.6796888310461777 and parameters: {'n_components': 8, 'max_depth': 19}. Best is trial 11 with value: 0.7670193737382579.
+Trial 17 finished with value: 0.7005037810190045 and parameters: {'n_components': 9, 'max_depth': 10}. Best is trial 11 with value: 0.7670193737382579.
+Trial 19 finished with value: 0.621167957877848 and parameters: {'n_components': 3, 'max_depth': 14}. Best is trial 11 with value: 0.7670193737382579.
+Trial 5 finished with value: 0.6205159294579002 and parameters: {'n_components': 2, 'max_depth': 18}. Best is trial 11 with value: 0.7670193737382579.
+Trial 24 finished with value: 0.6101328015287204 and parameters: {'n_components': 5, 'max_depth': 19}. Best is trial 11 with value: 0.7670193737382579.
+Trial 25 finished with value: 0.6781928954841743 and parameters: {'n_components': 8, 'max_depth': 17}. Best is trial 11 with value: 0.7670193737382579.

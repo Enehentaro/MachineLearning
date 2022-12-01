@@ -1,0 +1,731 @@
+A new study created in RDB with name: Poly_Linear_104720
+Trial 2 failed because of the following error: AttributeError("'Objective' object has no attribute 'x'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2328272625.py", line 7, in __call__
+    self.X = self.x*2
+AttributeError: 'Objective' object has no attribute 'x'
+Trial 7 failed because of the following error: AttributeError("'Objective' object has no attribute 'x'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2328272625.py", line 7, in __call__
+    self.X = self.x*2
+AttributeError: 'Objective' object has no attribute 'x'
+Trial 1 failed because of the following error: AttributeError("'Objective' object has no attribute 'x'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2328272625.py", line 7, in __call__
+    self.X = self.x*2
+AttributeError: 'Objective' object has no attribute 'x'
+Trial 6 failed because of the following error: AttributeError("'Objective' object has no attribute 'x'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2328272625.py", line 7, in __call__
+    self.X = self.x*2
+AttributeError: 'Objective' object has no attribute 'x'
+Trial 8 failed because of the following error: AttributeError("'Objective' object has no attribute 'x'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2328272625.py", line 7, in __call__
+    self.X = self.x*2
+AttributeError: 'Objective' object has no attribute 'x'
+Trial 11 failed because of the following error: AttributeError("'Objective' object has no attribute 'x'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2328272625.py", line 7, in __call__
+    self.X = self.x*2
+AttributeError: 'Objective' object has no attribute 'x'
+Trial 5 failed because of the following error: AttributeError("'Objective' object has no attribute 'x'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2328272625.py", line 7, in __call__
+    self.X = self.x*2
+AttributeError: 'Objective' object has no attribute 'x'
+Trial 10 failed because of the following error: AttributeError("'Objective' object has no attribute 'x'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2328272625.py", line 7, in __call__
+    self.X = self.x*2
+AttributeError: 'Objective' object has no attribute 'x'
+Trial 0 failed because of the following error: AttributeError("'Objective' object has no attribute 'x'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2328272625.py", line 7, in __call__
+    self.X = self.x*2
+AttributeError: 'Objective' object has no attribute 'x'
+Trial 4 failed because of the following error: AttributeError("'Objective' object has no attribute 'x'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2328272625.py", line 7, in __call__
+    self.X = self.x*2
+AttributeError: 'Objective' object has no attribute 'x'
+Trial 15 failed because of the following error: AttributeError("'Objective' object has no attribute 'x'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2328272625.py", line 7, in __call__
+    self.X = self.x*2
+AttributeError: 'Objective' object has no attribute 'x'
+Trial 12 failed because of the following error: AttributeError("'Objective' object has no attribute 'x'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2328272625.py", line 7, in __call__
+    self.X = self.x*2
+AttributeError: 'Objective' object has no attribute 'x'
+Trial 20 failed because of the following error: AttributeError("'Objective' object has no attribute 'x'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2328272625.py", line 7, in __call__
+    self.X = self.x*2
+AttributeError: 'Objective' object has no attribute 'x'
+Trial 17 failed because of the following error: AttributeError("'Objective' object has no attribute 'x'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2328272625.py", line 7, in __call__
+    self.X = self.x*2
+AttributeError: 'Objective' object has no attribute 'x'
+Trial 13 failed because of the following error: AttributeError("'Objective' object has no attribute 'x'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2328272625.py", line 7, in __call__
+    self.X = self.x*2
+AttributeError: 'Objective' object has no attribute 'x'
+Trial 14 failed because of the following error: AttributeError("'Objective' object has no attribute 'x'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2328272625.py", line 7, in __call__
+    self.X = self.x*2
+AttributeError: 'Objective' object has no attribute 'x'
+Trial 18 failed because of the following error: AttributeError("'Objective' object has no attribute 'x'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2328272625.py", line 7, in __call__
+    self.X = self.x*2
+AttributeError: 'Objective' object has no attribute 'x'
+Trial 19 failed because of the following error: AttributeError("'Objective' object has no attribute 'x'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2328272625.py", line 7, in __call__
+    self.X = self.x*2
+AttributeError: 'Objective' object has no attribute 'x'
+Trial 3 failed because of the following error: AttributeError("'Objective' object has no attribute 'x'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2328272625.py", line 7, in __call__
+    self.X = self.x*2
+AttributeError: 'Objective' object has no attribute 'x'
+Trial 23 failed because of the following error: AttributeError("'Objective' object has no attribute 'x'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2328272625.py", line 7, in __call__
+    self.X = self.x*2
+AttributeError: 'Objective' object has no attribute 'x'
+Trial 16 failed because of the following error: AttributeError("'Objective' object has no attribute 'x'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2328272625.py", line 7, in __call__
+    self.X = self.x*2
+AttributeError: 'Objective' object has no attribute 'x'
+Trial 21 failed because of the following error: AttributeError("'Objective' object has no attribute 'x'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2328272625.py", line 7, in __call__
+    self.X = self.x*2
+AttributeError: 'Objective' object has no attribute 'x'
+Trial 22 failed because of the following error: AttributeError("'Objective' object has no attribute 'x'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2328272625.py", line 7, in __call__
+    self.X = self.x*2
+AttributeError: 'Objective' object has no attribute 'x'
+Trial 9 failed because of the following error: AttributeError("'Objective' object has no attribute 'x'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2328272625.py", line 7, in __call__
+    self.X = self.x*2
+AttributeError: 'Objective' object has no attribute 'x'
+A new study created in RDB with name: Poly_Linear_104745
+Trial 6 failed because of the following error: AttributeError("'Objective' object has no attribute 'x'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2328272625.py", line 7, in __call__
+    self.X = self.x*2
+AttributeError: 'Objective' object has no attribute 'x'
+Trial 2 failed because of the following error: AttributeError("'Objective' object has no attribute 'x'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2328272625.py", line 7, in __call__
+    self.X = self.x*2
+AttributeError: 'Objective' object has no attribute 'x'
+Trial 4 failed because of the following error: AttributeError("'Objective' object has no attribute 'x'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2328272625.py", line 7, in __call__
+    self.X = self.x*2
+AttributeError: 'Objective' object has no attribute 'x'
+Trial 5 failed because of the following error: AttributeError("'Objective' object has no attribute 'x'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2328272625.py", line 7, in __call__
+    self.X = self.x*2
+AttributeError: 'Objective' object has no attribute 'x'
+Trial 10 failed because of the following error: AttributeError("'Objective' object has no attribute 'x'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2328272625.py", line 7, in __call__
+    self.X = self.x*2
+AttributeError: 'Objective' object has no attribute 'x'
+Trial 11 failed because of the following error: AttributeError("'Objective' object has no attribute 'x'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2328272625.py", line 7, in __call__
+    self.X = self.x*2
+AttributeError: 'Objective' object has no attribute 'x'
+Trial 9 failed because of the following error: AttributeError("'Objective' object has no attribute 'x'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2328272625.py", line 7, in __call__
+    self.X = self.x*2
+AttributeError: 'Objective' object has no attribute 'x'
+Trial 7 failed because of the following error: AttributeError("'Objective' object has no attribute 'x'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2328272625.py", line 7, in __call__
+    self.X = self.x*2
+AttributeError: 'Objective' object has no attribute 'x'
+Trial 8 failed because of the following error: AttributeError("'Objective' object has no attribute 'x'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2328272625.py", line 7, in __call__
+    self.X = self.x*2
+AttributeError: 'Objective' object has no attribute 'x'
+Trial 17 failed because of the following error: AttributeError("'Objective' object has no attribute 'x'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2328272625.py", line 7, in __call__
+    self.X = self.x*2
+AttributeError: 'Objective' object has no attribute 'x'
+Trial 1 failed because of the following error: AttributeError("'Objective' object has no attribute 'x'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2328272625.py", line 7, in __call__
+    self.X = self.x*2
+AttributeError: 'Objective' object has no attribute 'x'
+Trial 22 failed because of the following error: AttributeError("'Objective' object has no attribute 'x'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2328272625.py", line 7, in __call__
+    self.X = self.x*2
+AttributeError: 'Objective' object has no attribute 'x'
+Trial 12 failed because of the following error: AttributeError("'Objective' object has no attribute 'x'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2328272625.py", line 7, in __call__
+    self.X = self.x*2
+AttributeError: 'Objective' object has no attribute 'x'
+Trial 13 failed because of the following error: AttributeError("'Objective' object has no attribute 'x'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2328272625.py", line 7, in __call__
+    self.X = self.x*2
+AttributeError: 'Objective' object has no attribute 'x'
+Trial 23 failed because of the following error: AttributeError("'Objective' object has no attribute 'x'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2328272625.py", line 7, in __call__
+    self.X = self.x*2
+AttributeError: 'Objective' object has no attribute 'x'
+Trial 14 failed because of the following error: AttributeError("'Objective' object has no attribute 'x'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2328272625.py", line 7, in __call__
+    self.X = self.x*2
+AttributeError: 'Objective' object has no attribute 'x'
+Trial 15 failed because of the following error: AttributeError("'Objective' object has no attribute 'x'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2328272625.py", line 7, in __call__
+    self.X = self.x*2
+AttributeError: 'Objective' object has no attribute 'x'
+Trial 0 failed because of the following error: AttributeError("'Objective' object has no attribute 'x'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2328272625.py", line 7, in __call__
+    self.X = self.x*2
+AttributeError: 'Objective' object has no attribute 'x'
+Trial 3 failed because of the following error: AttributeError("'Objective' object has no attribute 'x'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2328272625.py", line 7, in __call__
+    self.X = self.x*2
+AttributeError: 'Objective' object has no attribute 'x'
+Trial 16 failed because of the following error: AttributeError("'Objective' object has no attribute 'x'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2328272625.py", line 7, in __call__
+    self.X = self.x*2
+AttributeError: 'Objective' object has no attribute 'x'
+Trial 19 failed because of the following error: AttributeError("'Objective' object has no attribute 'x'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2328272625.py", line 7, in __call__
+    self.X = self.x*2
+AttributeError: 'Objective' object has no attribute 'x'
+Trial 18 failed because of the following error: AttributeError("'Objective' object has no attribute 'x'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2328272625.py", line 7, in __call__
+    self.X = self.x*2
+AttributeError: 'Objective' object has no attribute 'x'
+Trial 20 failed because of the following error: AttributeError("'Objective' object has no attribute 'x'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2328272625.py", line 7, in __call__
+    self.X = self.x*2
+AttributeError: 'Objective' object has no attribute 'x'
+Trial 21 failed because of the following error: AttributeError("'Objective' object has no attribute 'x'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2328272625.py", line 7, in __call__
+    self.X = self.x*2
+AttributeError: 'Objective' object has no attribute 'x'
+A new study created in RDB with name: Poly_Linear_10480
+Trial 4 failed because of the following error: NameError("name 'PolynomialRegression' is not defined")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2760792820.py", line 14, in __call__
+    model = PolynomialRegression(*args, **kwargs)
+NameError: name 'PolynomialRegression' is not defined
+Trial 0 failed because of the following error: NameError("name 'PolynomialRegression' is not defined")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2760792820.py", line 14, in __call__
+    model = PolynomialRegression(*args, **kwargs)
+NameError: name 'PolynomialRegression' is not defined
+Trial 7 failed because of the following error: NameError("name 'PolynomialRegression' is not defined")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2760792820.py", line 14, in __call__
+    model = PolynomialRegression(*args, **kwargs)
+NameError: name 'PolynomialRegression' is not defined
+Trial 2 failed because of the following error: NameError("name 'PolynomialRegression' is not defined")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2760792820.py", line 14, in __call__
+    model = PolynomialRegression(*args, **kwargs)
+NameError: name 'PolynomialRegression' is not defined
+Trial 14 failed because of the following error: NameError("name 'PolynomialRegression' is not defined")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2760792820.py", line 14, in __call__
+    model = PolynomialRegression(*args, **kwargs)
+NameError: name 'PolynomialRegression' is not defined
+Trial 9 failed because of the following error: NameError("name 'PolynomialRegression' is not defined")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2760792820.py", line 14, in __call__
+    model = PolynomialRegression(*args, **kwargs)
+NameError: name 'PolynomialRegression' is not defined
+Trial 16 failed because of the following error: NameError("name 'PolynomialRegression' is not defined")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2760792820.py", line 14, in __call__
+    model = PolynomialRegression(*args, **kwargs)
+NameError: name 'PolynomialRegression' is not defined
+Trial 6 failed because of the following error: NameError("name 'PolynomialRegression' is not defined")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2760792820.py", line 14, in __call__
+    model = PolynomialRegression(*args, **kwargs)
+NameError: name 'PolynomialRegression' is not defined
+Trial 19 failed because of the following error: NameError("name 'PolynomialRegression' is not defined")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2760792820.py", line 14, in __call__
+    model = PolynomialRegression(*args, **kwargs)
+NameError: name 'PolynomialRegression' is not defined
+Trial 23 failed because of the following error: NameError("name 'PolynomialRegression' is not defined")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2760792820.py", line 14, in __call__
+    model = PolynomialRegression(*args, **kwargs)
+NameError: name 'PolynomialRegression' is not defined
+Trial 3 failed because of the following error: NameError("name 'PolynomialRegression' is not defined")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2760792820.py", line 14, in __call__
+    model = PolynomialRegression(*args, **kwargs)
+NameError: name 'PolynomialRegression' is not defined
+Trial 22 failed because of the following error: NameError("name 'PolynomialRegression' is not defined")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2760792820.py", line 14, in __call__
+    model = PolynomialRegression(*args, **kwargs)
+NameError: name 'PolynomialRegression' is not defined
+Trial 20 failed because of the following error: NameError("name 'PolynomialRegression' is not defined")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2760792820.py", line 14, in __call__
+    model = PolynomialRegression(*args, **kwargs)
+NameError: name 'PolynomialRegression' is not defined
+Trial 13 failed because of the following error: NameError("name 'PolynomialRegression' is not defined")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2760792820.py", line 14, in __call__
+    model = PolynomialRegression(*args, **kwargs)
+NameError: name 'PolynomialRegression' is not defined
+Trial 15 failed because of the following error: NameError("name 'PolynomialRegression' is not defined")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2760792820.py", line 14, in __call__
+    model = PolynomialRegression(*args, **kwargs)
+NameError: name 'PolynomialRegression' is not defined
+Trial 1 failed because of the following error: NameError("name 'PolynomialRegression' is not defined")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2760792820.py", line 14, in __call__
+    model = PolynomialRegression(*args, **kwargs)
+NameError: name 'PolynomialRegression' is not defined
+Trial 5 failed because of the following error: NameError("name 'PolynomialRegression' is not defined")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2760792820.py", line 14, in __call__
+    model = PolynomialRegression(*args, **kwargs)
+NameError: name 'PolynomialRegression' is not defined
+Trial 12 failed because of the following error: NameError("name 'PolynomialRegression' is not defined")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2760792820.py", line 14, in __call__
+    model = PolynomialRegression(*args, **kwargs)
+NameError: name 'PolynomialRegression' is not defined
+Trial 10 failed because of the following error: NameError("name 'PolynomialRegression' is not defined")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2760792820.py", line 14, in __call__
+    model = PolynomialRegression(*args, **kwargs)
+NameError: name 'PolynomialRegression' is not defined
+Trial 8 failed because of the following error: NameError("name 'PolynomialRegression' is not defined")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2760792820.py", line 14, in __call__
+    model = PolynomialRegression(*args, **kwargs)
+NameError: name 'PolynomialRegression' is not defined
+Trial 11 failed because of the following error: NameError("name 'PolynomialRegression' is not defined")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2760792820.py", line 14, in __call__
+    model = PolynomialRegression(*args, **kwargs)
+NameError: name 'PolynomialRegression' is not defined
+Trial 18 failed because of the following error: NameError("name 'PolynomialRegression' is not defined")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2760792820.py", line 14, in __call__
+    model = PolynomialRegression(*args, **kwargs)
+NameError: name 'PolynomialRegression' is not defined
+Trial 17 failed because of the following error: NameError("name 'PolynomialRegression' is not defined")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2760792820.py", line 14, in __call__
+    model = PolynomialRegression(*args, **kwargs)
+NameError: name 'PolynomialRegression' is not defined
+Trial 21 failed because of the following error: NameError("name 'PolynomialRegression' is not defined")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2760792820.py", line 14, in __call__
+    model = PolynomialRegression(*args, **kwargs)
+NameError: name 'PolynomialRegression' is not defined
+A new study created in RDB with name: Poly_Linear_104853
+Trial 21 failed because of the following error: ValueError('\nAll the 10 fits failed.\nIt is very likely that your model is misconfigured.\nYou can try to debug the error by setting error_score=\'raise\'.\n\nBelow are more details about the failures:\n--------------------------------------------------------------------------------\n5 fits failed with the following error:\nTraceback (most recent call last):\n  File "/usr/local/lib/python3.8/dist-packages/sklearn/model_selection/_validation.py", line 686, in _fit_and_score\n    estimator.fit(X_train, y_train, **fit_params)\n  File "/usr/local/lib/python3.8/dist-packages/sklearn/pipeline.py", line 378, in fit\n    Xt = self._fit(X, y, **fit_params_steps)\n  File "/usr/local/lib/python3.8/dist-packages/sklearn/pipeline.py", line 336, in _fit\n    X, fitted_transformer = fit_transform_one_cached(\n  File "/usr/local/lib/python3.8/dist-packages/joblib/memory.py", line 349, in __call__\n    return self.func(*args, **kwargs)\n  File "/usr/local/lib/python3.8/dist-packages/sklearn/pipeline.py", line 870, in _fit_transform_one\n    res = transformer.fit_transform(X, y, **fit_params)\n  File "/usr/local/lib/python3.8/dist-packages/sklearn/base.py", line 870, in fit_transform\n    return self.fit(X, y, **fit_params).transform(X)\n  File "/usr/local/lib/python3.8/dist-packages/sklearn/preprocessing/_polynomial.py", line 432, in transform\n    XP = np.empty(\nnumpy.core._exceptions._ArrayMemoryError: Unable to allocate 101. GiB for an array with shape (211, 64512240) and data type float64\n\n--------------------------------------------------------------------------------\n5 fits failed with the following error:\nTraceback (most recent call last):\n  File "/usr/local/lib/python3.8/dist-packages/sklearn/model_selection/_validation.py", line 686, in _fit_and_score\n    estimator.fit(X_train, y_train, **fit_params)\n  File "/usr/local/lib/python3.8/dist-packages/sklearn/pipeline.py", line 378, in fit\n    Xt = self._fit(X, y, **fit_params_steps)\n  File "/usr/local/lib/python3.8/dist-packages/sklearn/pipeline.py", line 336, in _fit\n    X, fitted_transformer = fit_transform_one_cached(\n  File "/usr/local/lib/python3.8/dist-packages/joblib/memory.py", line 349, in __call__\n    return self.func(*args, **kwargs)\n  File "/usr/local/lib/python3.8/dist-packages/sklearn/pipeline.py", line 870, in _fit_transform_one\n    res = transformer.fit_transform(X, y, **fit_params)\n  File "/usr/local/lib/python3.8/dist-packages/sklearn/base.py", line 870, in fit_transform\n    return self.fit(X, y, **fit_params).transform(X)\n  File "/usr/local/lib/python3.8/dist-packages/sklearn/preprocessing/_polynomial.py", line 432, in transform\n    XP = np.empty(\nnumpy.core._exceptions._ArrayMemoryError: Unable to allocate 102. GiB for an array with shape (212, 64512240) and data type float64\n')
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2760792820.py", line 23, in __call__
+    scores = cross_validate(estimator=model, scoring=metrics,
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/model_selection/_validation.py", line 285, in cross_validate
+    _warn_or_raise_about_fit_failures(results, error_score)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/model_selection/_validation.py", line 367, in _warn_or_raise_about_fit_failures
+    raise ValueError(all_fits_failed_message)
+ValueError: 
+All the 10 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+5 fits failed with the following error:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/model_selection/_validation.py", line 686, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/pipeline.py", line 378, in fit
+    Xt = self._fit(X, y, **fit_params_steps)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/pipeline.py", line 336, in _fit
+    X, fitted_transformer = fit_transform_one_cached(
+  File "/usr/local/lib/python3.8/dist-packages/joblib/memory.py", line 349, in __call__
+    return self.func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/pipeline.py", line 870, in _fit_transform_one
+    res = transformer.fit_transform(X, y, **fit_params)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/base.py", line 870, in fit_transform
+    return self.fit(X, y, **fit_params).transform(X)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/preprocessing/_polynomial.py", line 432, in transform
+    XP = np.empty(
+numpy.core._exceptions._ArrayMemoryError: Unable to allocate 101. GiB for an array with shape (211, 64512240) and data type float64
+
+--------------------------------------------------------------------------------
+5 fits failed with the following error:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/model_selection/_validation.py", line 686, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/pipeline.py", line 378, in fit
+    Xt = self._fit(X, y, **fit_params_steps)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/pipeline.py", line 336, in _fit
+    X, fitted_transformer = fit_transform_one_cached(
+  File "/usr/local/lib/python3.8/dist-packages/joblib/memory.py", line 349, in __call__
+    return self.func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/pipeline.py", line 870, in _fit_transform_one
+    res = transformer.fit_transform(X, y, **fit_params)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/base.py", line 870, in fit_transform
+    return self.fit(X, y, **fit_params).transform(X)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/preprocessing/_polynomial.py", line 432, in transform
+    XP = np.empty(
+numpy.core._exceptions._ArrayMemoryError: Unable to allocate 102. GiB for an array with shape (212, 64512240) and data type float64
+
+Trial 1 failed because of the following error: ValueError('\nAll the 10 fits failed.\nIt is very likely that your model is misconfigured.\nYou can try to debug the error by setting error_score=\'raise\'.\n\nBelow are more details about the failures:\n--------------------------------------------------------------------------------\n5 fits failed with the following error:\nTraceback (most recent call last):\n  File "/usr/local/lib/python3.8/dist-packages/sklearn/model_selection/_validation.py", line 686, in _fit_and_score\n    estimator.fit(X_train, y_train, **fit_params)\n  File "/usr/local/lib/python3.8/dist-packages/sklearn/pipeline.py", line 378, in fit\n    Xt = self._fit(X, y, **fit_params_steps)\n  File "/usr/local/lib/python3.8/dist-packages/sklearn/pipeline.py", line 336, in _fit\n    X, fitted_transformer = fit_transform_one_cached(\n  File "/usr/local/lib/python3.8/dist-packages/joblib/memory.py", line 349, in __call__\n    return self.func(*args, **kwargs)\n  File "/usr/local/lib/python3.8/dist-packages/sklearn/pipeline.py", line 870, in _fit_transform_one\n    res = transformer.fit_transform(X, y, **fit_params)\n  File "/usr/local/lib/python3.8/dist-packages/sklearn/base.py", line 870, in fit_transform\n    return self.fit(X, y, **fit_params).transform(X)\n  File "/usr/local/lib/python3.8/dist-packages/sklearn/preprocessing/_polynomial.py", line 432, in transform\n    XP = np.empty(\nnumpy.core._exceptions._ArrayMemoryError: Unable to allocate 101. GiB for an array with shape (211, 64512240) and data type float64\n\n--------------------------------------------------------------------------------\n5 fits failed with the following error:\nTraceback (most recent call last):\n  File "/usr/local/lib/python3.8/dist-packages/sklearn/model_selection/_validation.py", line 686, in _fit_and_score\n    estimator.fit(X_train, y_train, **fit_params)\n  File "/usr/local/lib/python3.8/dist-packages/sklearn/pipeline.py", line 378, in fit\n    Xt = self._fit(X, y, **fit_params_steps)\n  File "/usr/local/lib/python3.8/dist-packages/sklearn/pipeline.py", line 336, in _fit\n    X, fitted_transformer = fit_transform_one_cached(\n  File "/usr/local/lib/python3.8/dist-packages/joblib/memory.py", line 349, in __call__\n    return self.func(*args, **kwargs)\n  File "/usr/local/lib/python3.8/dist-packages/sklearn/pipeline.py", line 870, in _fit_transform_one\n    res = transformer.fit_transform(X, y, **fit_params)\n  File "/usr/local/lib/python3.8/dist-packages/sklearn/base.py", line 870, in fit_transform\n    return self.fit(X, y, **fit_params).transform(X)\n  File "/usr/local/lib/python3.8/dist-packages/sklearn/preprocessing/_polynomial.py", line 432, in transform\n    XP = np.empty(\nnumpy.core._exceptions._ArrayMemoryError: Unable to allocate 102. GiB for an array with shape (212, 64512240) and data type float64\n')
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2760792820.py", line 23, in __call__
+    scores = cross_validate(estimator=model, scoring=metrics,
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/model_selection/_validation.py", line 285, in cross_validate
+    _warn_or_raise_about_fit_failures(results, error_score)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/model_selection/_validation.py", line 367, in _warn_or_raise_about_fit_failures
+    raise ValueError(all_fits_failed_message)
+ValueError: 
+All the 10 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+5 fits failed with the following error:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/model_selection/_validation.py", line 686, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/pipeline.py", line 378, in fit
+    Xt = self._fit(X, y, **fit_params_steps)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/pipeline.py", line 336, in _fit
+    X, fitted_transformer = fit_transform_one_cached(
+  File "/usr/local/lib/python3.8/dist-packages/joblib/memory.py", line 349, in __call__
+    return self.func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/pipeline.py", line 870, in _fit_transform_one
+    res = transformer.fit_transform(X, y, **fit_params)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/base.py", line 870, in fit_transform
+    return self.fit(X, y, **fit_params).transform(X)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/preprocessing/_polynomial.py", line 432, in transform
+    XP = np.empty(
+numpy.core._exceptions._ArrayMemoryError: Unable to allocate 101. GiB for an array with shape (211, 64512240) and data type float64
+
+--------------------------------------------------------------------------------
+5 fits failed with the following error:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/model_selection/_validation.py", line 686, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/pipeline.py", line 378, in fit
+    Xt = self._fit(X, y, **fit_params_steps)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/pipeline.py", line 336, in _fit
+    X, fitted_transformer = fit_transform_one_cached(
+  File "/usr/local/lib/python3.8/dist-packages/joblib/memory.py", line 349, in __call__
+    return self.func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/pipeline.py", line 870, in _fit_transform_one
+    res = transformer.fit_transform(X, y, **fit_params)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/base.py", line 870, in fit_transform
+    return self.fit(X, y, **fit_params).transform(X)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/preprocessing/_polynomial.py", line 432, in transform
+    XP = np.empty(
+numpy.core._exceptions._ArrayMemoryError: Unable to allocate 102. GiB for an array with shape (212, 64512240) and data type float64
+
+Trial 7 failed because of the following error: ValueError('\nAll the 10 fits failed.\nIt is very likely that your model is misconfigured.\nYou can try to debug the error by setting error_score=\'raise\'.\n\nBelow are more details about the failures:\n--------------------------------------------------------------------------------\n5 fits failed with the following error:\nTraceback (most recent call last):\n  File "/usr/local/lib/python3.8/dist-packages/sklearn/model_selection/_validation.py", line 686, in _fit_and_score\n    estimator.fit(X_train, y_train, **fit_params)\n  File "/usr/local/lib/python3.8/dist-packages/sklearn/pipeline.py", line 378, in fit\n    Xt = self._fit(X, y, **fit_params_steps)\n  File "/usr/local/lib/python3.8/dist-packages/sklearn/pipeline.py", line 336, in _fit\n    X, fitted_transformer = fit_transform_one_cached(\n  File "/usr/local/lib/python3.8/dist-packages/joblib/memory.py", line 349, in __call__\n    return self.func(*args, **kwargs)\n  File "/usr/local/lib/python3.8/dist-packages/sklearn/pipeline.py", line 870, in _fit_transform_one\n    res = transformer.fit_transform(X, y, **fit_params)\n  File "/usr/local/lib/python3.8/dist-packages/sklearn/base.py", line 870, in fit_transform\n    return self.fit(X, y, **fit_params).transform(X)\n  File "/usr/local/lib/python3.8/dist-packages/sklearn/preprocessing/_polynomial.py", line 432, in transform\n    XP = np.empty(\nnumpy.core._exceptions._ArrayMemoryError: Unable to allocate 101. GiB for an array with shape (211, 64512240) and data type float64\n\n--------------------------------------------------------------------------------\n5 fits failed with the following error:\nTraceback (most recent call last):\n  File "/usr/local/lib/python3.8/dist-packages/sklearn/model_selection/_validation.py", line 686, in _fit_and_score\n    estimator.fit(X_train, y_train, **fit_params)\n  File "/usr/local/lib/python3.8/dist-packages/sklearn/pipeline.py", line 378, in fit\n    Xt = self._fit(X, y, **fit_params_steps)\n  File "/usr/local/lib/python3.8/dist-packages/sklearn/pipeline.py", line 336, in _fit\n    X, fitted_transformer = fit_transform_one_cached(\n  File "/usr/local/lib/python3.8/dist-packages/joblib/memory.py", line 349, in __call__\n    return self.func(*args, **kwargs)\n  File "/usr/local/lib/python3.8/dist-packages/sklearn/pipeline.py", line 870, in _fit_transform_one\n    res = transformer.fit_transform(X, y, **fit_params)\n  File "/usr/local/lib/python3.8/dist-packages/sklearn/base.py", line 870, in fit_transform\n    return self.fit(X, y, **fit_params).transform(X)\n  File "/usr/local/lib/python3.8/dist-packages/sklearn/preprocessing/_polynomial.py", line 432, in transform\n    XP = np.empty(\nnumpy.core._exceptions._ArrayMemoryError: Unable to allocate 102. GiB for an array with shape (212, 64512240) and data type float64\n')
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2760792820.py", line 23, in __call__
+    scores = cross_validate(estimator=model, scoring=metrics,
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/model_selection/_validation.py", line 285, in cross_validate
+    _warn_or_raise_about_fit_failures(results, error_score)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/model_selection/_validation.py", line 367, in _warn_or_raise_about_fit_failures
+    raise ValueError(all_fits_failed_message)
+ValueError: 
+All the 10 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+5 fits failed with the following error:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/model_selection/_validation.py", line 686, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/pipeline.py", line 378, in fit
+    Xt = self._fit(X, y, **fit_params_steps)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/pipeline.py", line 336, in _fit
+    X, fitted_transformer = fit_transform_one_cached(
+  File "/usr/local/lib/python3.8/dist-packages/joblib/memory.py", line 349, in __call__
+    return self.func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/pipeline.py", line 870, in _fit_transform_one
+    res = transformer.fit_transform(X, y, **fit_params)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/base.py", line 870, in fit_transform
+    return self.fit(X, y, **fit_params).transform(X)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/preprocessing/_polynomial.py", line 432, in transform
+    XP = np.empty(
+numpy.core._exceptions._ArrayMemoryError: Unable to allocate 101. GiB for an array with shape (211, 64512240) and data type float64
+
+--------------------------------------------------------------------------------
+5 fits failed with the following error:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/model_selection/_validation.py", line 686, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/pipeline.py", line 378, in fit
+    Xt = self._fit(X, y, **fit_params_steps)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/pipeline.py", line 336, in _fit
+    X, fitted_transformer = fit_transform_one_cached(
+  File "/usr/local/lib/python3.8/dist-packages/joblib/memory.py", line 349, in __call__
+    return self.func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/pipeline.py", line 870, in _fit_transform_one
+    res = transformer.fit_transform(X, y, **fit_params)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/base.py", line 870, in fit_transform
+    return self.fit(X, y, **fit_params).transform(X)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/preprocessing/_polynomial.py", line 432, in transform
+    XP = np.empty(
+numpy.core._exceptions._ArrayMemoryError: Unable to allocate 102. GiB for an array with shape (212, 64512240) and data type float64
+
+Trial 15 finished with value: 0.7728060333835753 and parameters: {'degree': 1}. Best is trial 20 with value: 0.7728060333835753.
+Trial 20 finished with value: 0.7728060333835753 and parameters: {'degree': 1}. Best is trial 20 with value: 0.7728060333835753.
+Trial 12 failed because of the following error: ValueError('\nAll the 10 fits failed.\nIt is very likely that your model is misconfigured.\nYou can try to debug the error by setting error_score=\'raise\'.\n\nBelow are more details about the failures:\n--------------------------------------------------------------------------------\n5 fits failed with the following error:\nTraceback (most recent call last):\n  File "/usr/local/lib/python3.8/dist-packages/sklearn/model_selection/_validation.py", line 686, in _fit_and_score\n    estimator.fit(X_train, y_train, **fit_params)\n  File "/usr/local/lib/python3.8/dist-packages/sklearn/pipeline.py", line 378, in fit\n    Xt = self._fit(X, y, **fit_params_steps)\n  File "/usr/local/lib/python3.8/dist-packages/sklearn/pipeline.py", line 336, in _fit\n    X, fitted_transformer = fit_transform_one_cached(\n  File "/usr/local/lib/python3.8/dist-packages/joblib/memory.py", line 349, in __call__\n    return self.func(*args, **kwargs)\n  File "/usr/local/lib/python3.8/dist-packages/sklearn/pipeline.py", line 870, in _fit_transform_one\n    res = transformer.fit_transform(X, y, **fit_params)\n  File "/usr/local/lib/python3.8/dist-packages/sklearn/base.py", line 870, in fit_transform\n    return self.fit(X, y, **fit_params).transform(X)\n  File "/usr/local/lib/python3.8/dist-packages/sklearn/preprocessing/_polynomial.py", line 432, in transform\n    XP = np.empty(\nnumpy.core._exceptions._ArrayMemoryError: Unable to allocate 101. GiB for an array with shape (211, 64512240) and data type float64\n\n--------------------------------------------------------------------------------\n5 fits failed with the following error:\nTraceback (most recent call last):\n  File "/usr/local/lib/python3.8/dist-packages/sklearn/model_selection/_validation.py", line 686, in _fit_and_score\n    estimator.fit(X_train, y_train, **fit_params)\n  File "/usr/local/lib/python3.8/dist-packages/sklearn/pipeline.py", line 378, in fit\n    Xt = self._fit(X, y, **fit_params_steps)\n  File "/usr/local/lib/python3.8/dist-packages/sklearn/pipeline.py", line 336, in _fit\n    X, fitted_transformer = fit_transform_one_cached(\n  File "/usr/local/lib/python3.8/dist-packages/joblib/memory.py", line 349, in __call__\n    return self.func(*args, **kwargs)\n  File "/usr/local/lib/python3.8/dist-packages/sklearn/pipeline.py", line 870, in _fit_transform_one\n    res = transformer.fit_transform(X, y, **fit_params)\n  File "/usr/local/lib/python3.8/dist-packages/sklearn/base.py", line 870, in fit_transform\n    return self.fit(X, y, **fit_params).transform(X)\n  File "/usr/local/lib/python3.8/dist-packages/sklearn/preprocessing/_polynomial.py", line 432, in transform\n    XP = np.empty(\nnumpy.core._exceptions._ArrayMemoryError: Unable to allocate 102. GiB for an array with shape (212, 64512240) and data type float64\n')
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_9105/2760792820.py", line 23, in __call__
+    scores = cross_validate(estimator=model, scoring=metrics,
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/model_selection/_validation.py", line 285, in cross_validate
+    _warn_or_raise_about_fit_failures(results, error_score)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/model_selection/_validation.py", line 367, in _warn_or_raise_about_fit_failures
+    raise ValueError(all_fits_failed_message)
+ValueError: 
+All the 10 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+5 fits failed with the following error:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/model_selection/_validation.py", line 686, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/pipeline.py", line 378, in fit
+    Xt = self._fit(X, y, **fit_params_steps)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/pipeline.py", line 336, in _fit
+    X, fitted_transformer = fit_transform_one_cached(
+  File "/usr/local/lib/python3.8/dist-packages/joblib/memory.py", line 349, in __call__
+    return self.func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/pipeline.py", line 870, in _fit_transform_one
+    res = transformer.fit_transform(X, y, **fit_params)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/base.py", line 870, in fit_transform
+    return self.fit(X, y, **fit_params).transform(X)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/preprocessing/_polynomial.py", line 432, in transform
+    XP = np.empty(
+numpy.core._exceptions._ArrayMemoryError: Unable to allocate 101. GiB for an array with shape (211, 64512240) and data type float64
+
+--------------------------------------------------------------------------------
+5 fits failed with the following error:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/model_selection/_validation.py", line 686, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/pipeline.py", line 378, in fit
+    Xt = self._fit(X, y, **fit_params_steps)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/pipeline.py", line 336, in _fit
+    X, fitted_transformer = fit_transform_one_cached(
+  File "/usr/local/lib/python3.8/dist-packages/joblib/memory.py", line 349, in __call__
+    return self.func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/pipeline.py", line 870, in _fit_transform_one
+    res = transformer.fit_transform(X, y, **fit_params)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/base.py", line 870, in fit_transform
+    return self.fit(X, y, **fit_params).transform(X)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/preprocessing/_polynomial.py", line 432, in transform
+    XP = np.empty(
+numpy.core._exceptions._ArrayMemoryError: Unable to allocate 102. GiB for an array with shape (212, 64512240) and data type float64
+
+A new study created in RDB with name: Poly_Linear_105046
+Trial 6 finished with value: 0.7332903237803265 and parameters: {'degree': 3}. Best is trial 20 with value: 0.7728060333835753.
+Trial 18 finished with value: 0.818369494924769 and parameters: {'degree': 2}. Best is trial 18 with value: 0.818369494924769.
+Trial 3 finished with value: 0.7332903237803265 and parameters: {'degree': 3}. Best is trial 18 with value: 0.818369494924769.
+Trial 19 finished with value: 0.7332903237803265 and parameters: {'degree': 3}. Best is trial 18 with value: 0.818369494924769.

@@ -1,0 +1,2 @@
+A new study created in RDB with name: Poly_Linear_105639
+Trial 0 finished with value: -3.047734147810578e+20 and parameters: {'degree': 4}. Best is trial 0 with value: -3.047734147810578e+20.

@@ -1,0 +1,6 @@
+A new study created in RDB with name: no-name-4642f87f-da4b-45f9-87cf-b5e8a7f5bc9b
+Trial 0 failed because of the following error: The number of the values 2 did not match the number of the objectives 1.
+Trial 1 failed because of the following error: The number of the values 2 did not match the number of the objectives 1.
+Trial 2 failed because of the following error: The number of the values 2 did not match the number of the objectives 1.
+Trial 3 failed because of the following error: The number of the values 2 did not match the number of the objectives 1.
+Trial 4 failed because of the following error: The number of the values 2 did not match the number of the objectives 1.

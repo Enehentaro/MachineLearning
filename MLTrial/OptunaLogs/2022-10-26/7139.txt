@@ -1,0 +1,25 @@
+A new study created in RDB with name: Poly_Linear_7139
+Trial 11 finished with value: -7.165651180341193e+18 and parameters: {'degree': 5}. Best is trial 11 with value: -7.165651180341193e+18.
+Trial 14 finished with value: -7.165651180341193e+18 and parameters: {'degree': 5}. Best is trial 20 with value: -267.4277419314029.
+Trial 16 finished with value: -58113.23194546889 and parameters: {'degree': 6}. Best is trial 20 with value: -267.4277419314029.
+Trial 20 finished with value: -267.4277419314029 and parameters: {'degree': 2}. Best is trial 20 with value: -267.4277419314029.
+Trial 21 finished with value: -1734765.4617555335 and parameters: {'degree': 8}. Best is trial 20 with value: -267.4277419314029.
+Trial 12 finished with value: -1.927305348902386e+23 and parameters: {'degree': 4}. Best is trial 20 with value: -267.4277419314029.
+Trial 9 finished with value: -267.4277419314029 and parameters: {'degree': 2}. Best is trial 20 with value: -267.4277419314029.
+Trial 0 finished with value: -58113.23194546889 and parameters: {'degree': 6}. Best is trial 20 with value: -267.4277419314029.
+Trial 2 finished with value: -267.4277419314029 and parameters: {'degree': 2}. Best is trial 20 with value: -267.4277419314029.
+Trial 18 finished with value: -7.165651180341193e+18 and parameters: {'degree': 5}. Best is trial 20 with value: -267.4277419314029.
+Trial 22 finished with value: -486.31809101728186 and parameters: {'degree': 3}. Best is trial 20 with value: -267.4277419314029.
+Trial 19 finished with value: -1.927305348902386e+23 and parameters: {'degree': 4}. Best is trial 20 with value: -267.4277419314029.
+Trial 7 finished with value: -2029009.7592081868 and parameters: {'degree': 7}. Best is trial 20 with value: -267.4277419314029.
+Trial 6 finished with value: -486.31809101728186 and parameters: {'degree': 3}. Best is trial 20 with value: -267.4277419314029.
+Trial 23 finished with value: -486.31809101728186 and parameters: {'degree': 3}. Best is trial 20 with value: -267.4277419314029.
+Trial 8 finished with value: -2029009.7592081868 and parameters: {'degree': 7}. Best is trial 20 with value: -267.4277419314029.
+Trial 10 finished with value: -1734765.4617555335 and parameters: {'degree': 8}. Best is trial 20 with value: -267.4277419314029.
+Trial 13 finished with value: -351.8175446387289 and parameters: {'degree': 1}. Best is trial 20 with value: -267.4277419314029.
+Trial 17 finished with value: -590931.4831442994 and parameters: {'degree': 9}. Best is trial 20 with value: -267.4277419314029.
+Trial 4 finished with value: -590931.4831442994 and parameters: {'degree': 9}. Best is trial 20 with value: -267.4277419314029.
+Trial 3 finished with value: -728551.151975228 and parameters: {'degree': 10}. Best is trial 20 with value: -267.4277419314029.
+Trial 5 finished with value: -1734765.4617555335 and parameters: {'degree': 8}. Best is trial 20 with value: -267.4277419314029.
+Trial 15 finished with value: -728551.151975228 and parameters: {'degree': 10}. Best is trial 20 with value: -267.4277419314029.
+Trial 1 finished with value: -728551.151975228 and parameters: {'degree': 10}. Best is trial 20 with value: -267.4277419314029.

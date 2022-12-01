@@ -1,0 +1,291 @@
+A new study created in RDB with name: Poly_Linear_55146
+Trial 3 failed because of the following error: ValueError('array is too big; `arr.size * arr.dtype.itemsize` is larger than the maximum possible size.')
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_14148/408002874.py", line 15, in __call__
+    X_poly = poly_model.fit_transform(self.X)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/base.py", line 867, in fit_transform
+    return self.fit(X, **fit_params).transform(X)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/preprocessing/_polynomial.py", line 432, in transform
+    XP = np.empty(
+ValueError: array is too big; `arr.size * arr.dtype.itemsize` is larger than the maximum possible size.
+Trial 6 failed because of the following error: ValueError('Maximum allowed dimension exceeded')
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_14148/408002874.py", line 15, in __call__
+    X_poly = poly_model.fit_transform(self.X)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/base.py", line 867, in fit_transform
+    return self.fit(X, **fit_params).transform(X)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/preprocessing/_polynomial.py", line 432, in transform
+    XP = np.empty(
+ValueError: Maximum allowed dimension exceeded
+Trial 8 failed because of the following error: ValueError('Maximum allowed dimension exceeded')
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_14148/408002874.py", line 15, in __call__
+    X_poly = poly_model.fit_transform(self.X)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/base.py", line 867, in fit_transform
+    return self.fit(X, **fit_params).transform(X)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/preprocessing/_polynomial.py", line 432, in transform
+    XP = np.empty(
+ValueError: Maximum allowed dimension exceeded
+Trial 5 failed because of the following error: ValueError('Maximum allowed dimension exceeded')
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_14148/408002874.py", line 15, in __call__
+    X_poly = poly_model.fit_transform(self.X)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/base.py", line 867, in fit_transform
+    return self.fit(X, **fit_params).transform(X)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/preprocessing/_polynomial.py", line 432, in transform
+    XP = np.empty(
+ValueError: Maximum allowed dimension exceeded
+Trial 14 failed because of the following error: MemoryError((235, 62204817403), dtype('float64'))
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_14148/408002874.py", line 15, in __call__
+    X_poly = poly_model.fit_transform(self.X)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/base.py", line 867, in fit_transform
+    return self.fit(X, **fit_params).transform(X)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/preprocessing/_polynomial.py", line 432, in transform
+    XP = np.empty(
+numpy.core._exceptions._ArrayMemoryError: Unable to allocate 106. TiB for an array with shape (235, 62204817403) and data type float64
+Trial 0 failed because of the following error: ValueError('array is too big; `arr.size * arr.dtype.itemsize` is larger than the maximum possible size.')
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_14148/408002874.py", line 15, in __call__
+    X_poly = poly_model.fit_transform(self.X)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/base.py", line 867, in fit_transform
+    return self.fit(X, **fit_params).transform(X)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/preprocessing/_polynomial.py", line 432, in transform
+    XP = np.empty(
+ValueError: array is too big; `arr.size * arr.dtype.itemsize` is larger than the maximum possible size.
+Trial 7 failed because of the following error: ValueError('Maximum allowed dimension exceeded')
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_14148/408002874.py", line 15, in __call__
+    X_poly = poly_model.fit_transform(self.X)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/base.py", line 867, in fit_transform
+    return self.fit(X, **fit_params).transform(X)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/preprocessing/_polynomial.py", line 432, in transform
+    XP = np.empty(
+ValueError: Maximum allowed dimension exceeded
+Trial 17 failed because of the following error: ValueError('Maximum allowed dimension exceeded')
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_14148/408002874.py", line 15, in __call__
+    X_poly = poly_model.fit_transform(self.X)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/base.py", line 867, in fit_transform
+    return self.fit(X, **fit_params).transform(X)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/preprocessing/_polynomial.py", line 432, in transform
+    XP = np.empty(
+ValueError: Maximum allowed dimension exceeded
+Trial 18 failed because of the following error: ValueError('array is too big; `arr.size * arr.dtype.itemsize` is larger than the maximum possible size.')
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_14148/408002874.py", line 15, in __call__
+    X_poly = poly_model.fit_transform(self.X)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/base.py", line 867, in fit_transform
+    return self.fit(X, **fit_params).transform(X)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/preprocessing/_polynomial.py", line 432, in transform
+    XP = np.empty(
+ValueError: array is too big; `arr.size * arr.dtype.itemsize` is larger than the maximum possible size.
+Trial 12 failed because of the following error: ValueError('Maximum allowed dimension exceeded')
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_14148/408002874.py", line 15, in __call__
+    X_poly = poly_model.fit_transform(self.X)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/base.py", line 867, in fit_transform
+    return self.fit(X, **fit_params).transform(X)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/preprocessing/_polynomial.py", line 432, in transform
+    XP = np.empty(
+ValueError: Maximum allowed dimension exceeded
+Trial 10 failed because of the following error: ValueError('Maximum allowed dimension exceeded')
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_14148/408002874.py", line 15, in __call__
+    X_poly = poly_model.fit_transform(self.X)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/base.py", line 867, in fit_transform
+    return self.fit(X, **fit_params).transform(X)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/preprocessing/_polynomial.py", line 432, in transform
+    XP = np.empty(
+ValueError: Maximum allowed dimension exceeded
+Trial 21 failed because of the following error: ValueError('array is too big; `arr.size * arr.dtype.itemsize` is larger than the maximum possible size.')
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_14148/408002874.py", line 15, in __call__
+    X_poly = poly_model.fit_transform(self.X)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/base.py", line 867, in fit_transform
+    return self.fit(X, **fit_params).transform(X)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/preprocessing/_polynomial.py", line 432, in transform
+    XP = np.empty(
+ValueError: array is too big; `arr.size * arr.dtype.itemsize` is larger than the maximum possible size.
+Trial 22 failed because of the following error: ValueError('Maximum allowed dimension exceeded')
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_14148/408002874.py", line 15, in __call__
+    X_poly = poly_model.fit_transform(self.X)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/base.py", line 867, in fit_transform
+    return self.fit(X, **fit_params).transform(X)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/preprocessing/_polynomial.py", line 432, in transform
+    XP = np.empty(
+ValueError: Maximum allowed dimension exceeded
+Trial 15 failed because of the following error: ValueError('Maximum allowed dimension exceeded')
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_14148/408002874.py", line 15, in __call__
+    X_poly = poly_model.fit_transform(self.X)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/base.py", line 867, in fit_transform
+    return self.fit(X, **fit_params).transform(X)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/preprocessing/_polynomial.py", line 432, in transform
+    XP = np.empty(
+ValueError: Maximum allowed dimension exceeded
+Trial 2 failed because of the following error: ValueError('Maximum allowed dimension exceeded')
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_14148/408002874.py", line 15, in __call__
+    X_poly = poly_model.fit_transform(self.X)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/base.py", line 867, in fit_transform
+    return self.fit(X, **fit_params).transform(X)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/preprocessing/_polynomial.py", line 432, in transform
+    XP = np.empty(
+ValueError: Maximum allowed dimension exceeded
+Trial 20 failed because of the following error: ValueError('Maximum allowed dimension exceeded')
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_14148/408002874.py", line 15, in __call__
+    X_poly = poly_model.fit_transform(self.X)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/base.py", line 867, in fit_transform
+    return self.fit(X, **fit_params).transform(X)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/preprocessing/_polynomial.py", line 432, in transform
+    XP = np.empty(
+ValueError: Maximum allowed dimension exceeded
+Trial 9 failed because of the following error: ValueError('Maximum allowed dimension exceeded')
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_14148/408002874.py", line 15, in __call__
+    X_poly = poly_model.fit_transform(self.X)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/base.py", line 867, in fit_transform
+    return self.fit(X, **fit_params).transform(X)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/preprocessing/_polynomial.py", line 432, in transform
+    XP = np.empty(
+ValueError: Maximum allowed dimension exceeded
+Trial 19 failed because of the following error: ValueError('Maximum allowed dimension exceeded')
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_14148/408002874.py", line 15, in __call__
+    X_poly = poly_model.fit_transform(self.X)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/base.py", line 867, in fit_transform
+    return self.fit(X, **fit_params).transform(X)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/preprocessing/_polynomial.py", line 432, in transform
+    XP = np.empty(
+ValueError: Maximum allowed dimension exceeded
+Trial 23 failed because of the following error: ValueError('Maximum allowed dimension exceeded')
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_14148/408002874.py", line 15, in __call__
+    X_poly = poly_model.fit_transform(self.X)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/base.py", line 867, in fit_transform
+    return self.fit(X, **fit_params).transform(X)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/preprocessing/_polynomial.py", line 432, in transform
+    XP = np.empty(
+ValueError: Maximum allowed dimension exceeded
+Trial 1 failed because of the following error: ValueError('Maximum allowed dimension exceeded')
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_14148/408002874.py", line 15, in __call__
+    X_poly = poly_model.fit_transform(self.X)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/base.py", line 867, in fit_transform
+    return self.fit(X, **fit_params).transform(X)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/preprocessing/_polynomial.py", line 432, in transform
+    XP = np.empty(
+ValueError: Maximum allowed dimension exceeded
+Trial 4 failed because of the following error: ValueError('Maximum allowed dimension exceeded')
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_14148/408002874.py", line 15, in __call__
+    X_poly = poly_model.fit_transform(self.X)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/base.py", line 867, in fit_transform
+    return self.fit(X, **fit_params).transform(X)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/preprocessing/_polynomial.py", line 432, in transform
+    XP = np.empty(
+ValueError: Maximum allowed dimension exceeded
+A new study created in RDB with name: Poly_Linear_55351
+Trial 0 failed because of the following error: ValueError('Maximum allowed dimension exceeded')
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_14148/408002874.py", line 15, in __call__
+    X_poly = poly_model.fit_transform(self.X)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/base.py", line 867, in fit_transform
+    return self.fit(X, **fit_params).transform(X)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/preprocessing/_polynomial.py", line 432, in transform
+    XP = np.empty(
+ValueError: Maximum allowed dimension exceeded
+Trial 4 failed because of the following error: ValueError('Maximum allowed dimension exceeded')
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_14148/408002874.py", line 15, in __call__
+    X_poly = poly_model.fit_transform(self.X)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/base.py", line 867, in fit_transform
+    return self.fit(X, **fit_params).transform(X)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/preprocessing/_polynomial.py", line 432, in transform
+    XP = np.empty(
+ValueError: Maximum allowed dimension exceeded
+Trial 3 failed because of the following error: ValueError('array is too big; `arr.size * arr.dtype.itemsize` is larger than the maximum possible size.')
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_14148/408002874.py", line 15, in __call__
+    X_poly = poly_model.fit_transform(self.X)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/base.py", line 867, in fit_transform
+    return self.fit(X, **fit_params).transform(X)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/preprocessing/_polynomial.py", line 432, in transform
+    XP = np.empty(
+ValueError: array is too big; `arr.size * arr.dtype.itemsize` is larger than the maximum possible size.
+Trial 2 failed because of the following error: ValueError('Maximum allowed dimension exceeded')
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_14148/408002874.py", line 15, in __call__
+    X_poly = poly_model.fit_transform(self.X)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/base.py", line 867, in fit_transform
+    return self.fit(X, **fit_params).transform(X)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/preprocessing/_polynomial.py", line 432, in transform
+    XP = np.empty(
+ValueError: Maximum allowed dimension exceeded
+Trial 1 failed because of the following error: ValueError('array is too big; `arr.size * arr.dtype.itemsize` is larger than the maximum possible size.')
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/tmp/ipykernel_14148/408002874.py", line 15, in __call__
+    X_poly = poly_model.fit_transform(self.X)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/base.py", line 867, in fit_transform
+    return self.fit(X, **fit_params).transform(X)
+  File "/usr/local/lib/python3.8/dist-packages/sklearn/preprocessing/_polynomial.py", line 432, in transform
+    XP = np.empty(
+ValueError: array is too big; `arr.size * arr.dtype.itemsize` is larger than the maximum possible size.
+Trial 13 finished with value: -379.59923135440243 and parameters: {'degree': 1}. Best is trial 13 with value: -379.59923135440243.
+Trial 16 finished with value: -379.59923135440243 and parameters: {'degree': 1}. Best is trial 13 with value: -379.59923135440243.
+Trial 11 finished with value: -379.59923135440243 and parameters: {'degree': 1}. Best is trial 13 with value: -379.59923135440243.
