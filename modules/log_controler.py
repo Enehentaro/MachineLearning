@@ -10,14 +10,14 @@ class ControlLog:
         self.logger = None
         self.log_fhandler = None
         
-    def decide_filename(self):
+    def decide_filename(self, what_log="OptunaLogs"):
         dt_today = datetime.date.today()
         dt_now = datetime.datetime.now()
         log_dir_name = str(dt_today) + "/"
         log_file_name = str(dt_now.hour) + str(dt_now.minute) + str(dt_now.second)
 
         #ログ出力を行うディレクトリ作成
-        log_dir_path = "./OptunaLogs/" + log_dir_name
+        log_dir_path = "./" + what_log + "/" + log_dir_name
         os.makedirs(log_dir_path, exist_ok=True)
         
         return log_file_name, log_dir_path
