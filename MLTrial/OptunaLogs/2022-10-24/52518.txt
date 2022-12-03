@@ -1,4 +1,0 @@
-A new study created in RDB with name: no-name-2e1c62fa-19bb-435e-ab04-00966bbf4755
-Trial 0 finished with values: (0.7715333832894766,) with parameters: {'alpha': 0.012164941464151846, 'max_iter': 72061}.
-Trial 1 finished with values: (0.7712671187054675,) with parameters: {'alpha': 0.00010013176560941267, 'max_iter': 30303}.
-Trial 2 finished with values: (0.7712787845057312,) with parameters: {'alpha': 0.0005417257182767973, 'max_iter': 9324}.
