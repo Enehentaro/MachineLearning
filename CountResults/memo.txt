@@ -7,3 +7,6 @@ RoI = 観測飛沫数 / 部屋の大きさ
 
 mouth height on standing : 1.5 m
 mouth height on sitting : 1.2 m
+
+
+summary_221015.csvにおけるRoIは、時刻２秒以降にカウントされた飛沫の数である
