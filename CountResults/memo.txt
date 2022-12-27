@@ -1,9 +1,0 @@
-このディレクトリ配下のすべてのCSVファイルにおいて、感染リスクRoIは、
-
-RoI = 観測飛沫数 / 部屋の大きさ
-
-で求めたものである。
-
-
-mouth height on standing : 1.5 m
-mouth height on sitting : 1.2 m
