@@ -137,3 +137,7 @@ OptunaLog/
 # model.png by keras.utils.plot_model()
 model.png
 
+# Figures
+Fig/
+
+
