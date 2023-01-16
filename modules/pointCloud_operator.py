@@ -133,6 +133,8 @@ def readSTL_and_makePointCloudDict(officemodel_path, case_list):
 
 
         pointCloud_dict[officename] = pc_dict_modified
+        
+    return pointCloud_dict
 
 
     
