@@ -1,0 +1,18 @@
+summary_20221202.csvについて：
+    n_from2sec:時刻2秒以降にカウントされた飛沫の数
+    n_from2sec/S:上を部屋の面積で割ったもの
+    count_sum:観測飛沫数の時系列データの総和
+    count_timeMean:上をデータ長さ（601）で割ったもの（時間平均）
+    
+summary_20221202.csvについて：
+    n_from2sec:時刻2秒以降にカウントされた飛沫の数
+    n_from2sec/S:上を部屋の面積で割ったもの
+    countTimeMean_sit:座っている人の口高さでの飛沫観測数時間平均
+    countTimeMean_sit2stand:座っている人の口高さから立っている人の口高さまでの範囲の飛沫観測数時間平均
+    
+summary_20230105.csvについて：
+    n_from2sec:時刻2秒以降にカウントされた飛沫の数
+    n_from2sec/S:上を部屋の面積で割ったもの
+    countTimeMean_sit:座っている人の口高さでの飛沫観測数時間平均
+    countTimeMean_sit2stand:座っている人の口高さから立っている人の口高さまでの範囲の飛沫観測数時間平均
+    countTimeMean_exceptDesk:座っている人の口高さから立っている人の口高さまでの範囲で、感染者の机の上以外における飛沫観測数時間平均

@@ -132,3 +132,12 @@ dmypy.json
 KerasTuner_log/
 tblogs/
 OptunaLog/
+*.log
+
+# model.png by keras.utils.plot_model()
+model.png
+
+# Figures
+Fig/
+
+
