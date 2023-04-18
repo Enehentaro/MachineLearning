@@ -1,0 +1,8 @@
+mlxtend>=0.21.0
+tqdm>=4.64.0
+ipywidgets>=7.7.2
+nodejs>=0.1.1
+xgboost
+lightgbm
+optuna>=3.0.3
+optuna-dashboard>=0.7.3
