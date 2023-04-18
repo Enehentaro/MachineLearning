@@ -3,6 +3,8 @@ import matplotlib.pyplot as plt
 from mpl_toolkits.axes_grid1 import make_axes_locatable
 import numpy as np
 
+colors = list(mpl.colors.cnames.keys())
+
 def make_colormap(colors):
     #可視化用カラーマップの作成
     nmax = float(len(colors) - 1)
@@ -69,17 +71,17 @@ def show_residual_plot(train_x, train_y, test_x, test_y, figsize=[10, 8]):
     plt.tight_layout()
     plt.show()
     
-def show_office_residual_plot(train_x, train_y, test_x, test_y, office_list, figsize=[10, 8], xlim=[50, 250], ylim=[-60,120]):
+def show_office_residual_plot(train_x, train_y, test_x, test_y, data_indices, office_list, figsize=[10, 8], xlim=None, ylim=None):
 #     xlim = [min(min(train_x), min(test_x))-5, max(max(train_x), max(test_x))+5]
     fig= plt.figure(figsize=figsize)
 
     #カラーマップ等の準備
     markers = ("s", "x", "o", "^", "v", "<", ">", "1", "2", "3", "4", "8")
-    colors = ("red", "blue", "limegreen", "gray", "cyan", "black", "purple", "green",
-              "orange", "yellow", "crimson", "goldenrod", "orchid", "khaki", "darkgray")
+    # colors = ("red", "blue", "limegreen", "gray", "cyan", "black", "purple", "green",
+    #           "orange", "yellow", "crimson", "goldenrod", "orchid", "khaki", "darkgray")
 
-    for idx, target_office_name in enumerate(np.unique(office_list)):
-        target_office_index = [i for i in range(office_list.shape[0]) if any(office_list[i] == target_office_name)]
+    for idx, target_office_name in enumerate(office_list):
+        target_office_index = [i for i, data_index in enumerate(data_indices) if target_office_name + '_' in data_index]
         plt.scatter(train_x[target_office_index], train_y[target_office_index], 
                     s=80, c=colors[idx], marker=markers[2], edgecolor="white", label="Training:"+target_office_name)
         
@@ -87,8 +89,9 @@ def show_office_residual_plot(train_x, train_y, test_x, test_y, office_list, fig
     plt.xlabel("Predicted values")
     plt.ylabel("Residuals")
     plt.legend(loc="best")
-    plt.hlines(y=0, xmin=xlim[0], xmax=xlim[1], color="black", lw=2)
+    # plt.hlines(y=0, xmin=xlim[0], xmax=xlim[1], color="black", lw=2)
     plt.xlim(xlim)
     plt.ylim(ylim)
     plt.tight_layout()
     plt.show()
+    
