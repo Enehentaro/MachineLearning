@@ -1,4 +1,4 @@
-,office,1_x,1_y,1_angle,2_x,2_y,2_angle,3_x,3_y,3_angle,4_x,4_y,4_angle,5_x,5_y,5_angle,size_x,size_y,aircon,ventilation,exhaust,countTimeMean_onlyFloating
+case_name,office,1_x,1_y,1_angle,2_x,2_y,2_angle,3_x,3_y,3_angle,4_x,4_y,4_angle,5_x,5_y,5_angle,size_x,size_y,aircon,ventilation,exhaust,countTimeMean_onlyFloating
 office1_0_0,office1,4.76,2.18,180.0,3.285,3.16,270.0,1.835,3.16,270.0,1.435,1.241,90.0,2.885,1.241,90.0,6.0,5.5,0.0,0.0,off,2991.4056666666665
 office1_0_123_aout,office1,4.76,2.18,180.0,3.285,3.16,270.0,1.835,3.16,270.0,1.435,1.241,90.0,2.885,1.241,90.0,6.0,5.5,0.0,123.0,a,2656.9823333333334
 office1_0_123_bout,office1,4.76,2.18,180.0,3.285,3.16,270.0,1.835,3.16,270.0,1.435,1.241,90.0,2.885,1.241,90.0,6.0,5.5,0.0,123.0,b,2951.1446666666666

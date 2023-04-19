@@ -1,0 +1,148 @@
+# warningはpythonの標準ライブラリ．
+# FutureWarnigが邪魔なので非表示にする．動作に支障が無ければ問題ない．また最適化によって解が収束しないときに出るConvergenceWarningも邪魔なので非表示にする．
+import warnings
+from sklearn.exceptions import ConvergenceWarning
+warnings.simplefilter("ignore", category=(FutureWarning, ConvergenceWarning))#対象のwarningsクラスはタプルで渡す必要があるらしい
+import pprint
+import sys
+sys.path.append("/mnt/MachineLearning")
+pprint.pprint(sys.path)
+
+# 各種モジュールのimport
+import os
+import glob
+
+import numpy as np
+import pandas as pd
+import matplotlib
+import matplotlib.pyplot as plt
+from mlxtend.plotting import scatterplotmatrix
+from mlxtend.plotting import heatmap
+import statistics
+
+from modules import show_mod
+from modules.log_controler import ControlLog
+
+from tqdm.notebook import tqdm
+
+from sklearn import preprocessing
+from sklearn.pipeline import make_pipeline
+
+from sklearn.model_selection import cross_validate, KFold, train_test_split
+from sklearn.metrics import mean_squared_error, r2_score, mean_absolute_error
+
+import tensorflow as tf
+from tensorflow import keras
+from keras.models import Sequential
+from keras.layers import Dense
+from keras import optimizers
+from keras.layers import BatchNormalization
+from keras.layers import ReLU, LeakyReLU, PReLU
+from keras.layers import Dropout
+from keras.callbacks import EarlyStopping, TensorBoard
+from keras.backend import clear_session
+
+import optuna
+
+def main():
+    # 読み込むデータのパスの設定
+    current_dir_path = os.getcwd()
+    data_path = "/mnt/MachineLearning/data/"
+    output_path = "/mnt/MachineLearning/MLTrial/images/"
+    os.makedirs(output_path, exist_ok=True)
+
+    # データの読み込み
+    df_read = pd.read_csv(f"{data_path}summary_20230418.csv", index_col="case_name")
+    office_array = df_read["office"].unique()
+
+    RoI_name = "countTimeMean_onlyFloating"
+
+    # オフィスのRoIをプロットして出力
+    fig = plt.figure(figsize=[10, 8])
+    ax = fig.add_subplot(111, title="RoI plot", xlabel=RoI_name, ylabel="case index")
+    # カラーマップ等の準備
+    markers = ("s", "x", "o", "^", "v", "<", ">", "1", "2", "3", "4", "8")
+    colors = list(matplotlib.colors.CSS4_COLORS.values())#148色までなら対応可能
+
+    for idx, target_office_name in enumerate(office_array):
+        df = df_read[df_read["office"]==target_office_name]
+        ax.scatter(df[RoI_name], df.index, 
+                    s=80, c=colors[idx], marker=markers[2], edgecolor="white", label=target_office_name)
+        
+    ax.legend(loc="center right")
+    ax.grid()
+    fig.savefig(f"{output_path}office_RoI_plot.png")
+
+    # 排気口位置a,b,offをダミー変数化
+    df_read = pd.get_dummies(df_read, columns=['exhaust'])
+    print(df_read.info())
+
+    # 説明変数と目的変数の定義
+    explanatory_variable =['aircon', 'ventilation', '1_x', '1_y', '1_angle', '2_x', '2_y', '2_angle', '3_x', '3_y', '3_angle', '4_x', '4_y', '4_angle', '5_x', '5_y', '5_angle', 
+                        'size_x','size_y', 'exhaust_a', 'exhaust_b', 'exhaust_off']
+
+    df_explanatory_variable = df_read[explanatory_variable]
+    df_objective_variable = df_read[["office", RoI_name]]
+
+    # 説明変数の標準化(only explanatory variable)
+    stdscaler = preprocessing.StandardScaler()
+    stdscaler.fit(df_explanatory_variable)
+    np_explanatory_variable_std = stdscaler.transform(df_explanatory_variable)
+    df_explanatory_variable_std = pd.DataFrame(np_explanatory_variable_std, index=df_explanatory_variable.index, columns=df_explanatory_variable.columns)
+
+    # トレーニングデータとテストデータの分割
+    train_explanatory_variable, test_explanatory_variable = train_test_split(df_explanatory_variable_std, test_size=0.3, random_state=0)
+    train_data_index = train_explanatory_variable.index
+    test_data_index = test_explanatory_variable.index
+    train_objective_variable = df_objective_variable.loc[train_data_index]
+    test_objective_variable = df_objective_variable.loc[test_data_index]
+
+    # GPUの環境変数設定
+    os.environ["CUDA_VISIBLE_DEVICES"] = "0"
+    print(os.environ["CUDA_VISIBLE_DEVICES"])
+    # gpuの確認
+    from tensorflow.python.client import device_lib
+    pprint.pprint(device_lib.list_local_devices())
+
+    
+
+
+
+def show_residual_plot(train_x, train_y, test_x, test_y, figsize=[10, 8]):
+    xlim = [min(min(train_x), min(test_x))-5, max(max(train_x), max(test_x))+5]
+    fig= plt.figure(figsize=figsize)
+    plt.scatter(train_x, train_y, s=80, c="limegreen", marker="o", edgecolor="white", label="Training data")
+    plt.scatter(test_x, test_y, s=80, c="steelblue", marker="s", edgecolor="white", label="Test data")
+    plt.xlabel("Predicted values")
+    plt.ylabel("Residuals")
+    plt.legend(loc="best")
+    plt.hlines(y=0, xmin=xlim[0], xmax=xlim[1], color="black", lw=2)
+    plt.xlim(xlim)
+    plt.tight_layout()
+    plt.show()
+    
+def show_office_residual_plot(train_x, train_y, test_x, test_y, data_indices, office_list, figsize=[10, 8], xlim=None, ylim=None):
+    # xlim = [min(min(train_x), min(test_x))-5, max(max(train_x), max(test_x))+5]
+    fig= plt.figure(figsize=figsize)
+
+    # カラーマップ等の準備
+    markers = ("s", "x", "o", "^", "v", "<", ">", "1", "2", "3", "4", "8")
+    colors = list(matplotlib.colors.CSS4_COLORS.values())
+
+    for idx, target_office_name in enumerate(office_list):
+        target_office_index = [i for i, data_index in enumerate(data_indices) if target_office_name + '_' in data_index]
+        plt.scatter(train_x[target_office_index], train_y[target_office_index], 
+                    s=80, c=colors[idx], marker=markers[2], edgecolor="white", label="Training:"+target_office_name)
+        
+    plt.scatter(test_x, test_y, s=80, c="steelblue", marker="x", edgecolor="white", label="Test data")
+    plt.xlabel("Predicted values")
+    plt.ylabel("Residuals")
+    plt.legend(loc="best")
+    # plt.hlines(y=0, xmin=xlim[0], xmax=xlim[1], color="black", lw=2)
+    plt.xlim(xlim)
+    plt.ylim(ylim)
+    plt.tight_layout()
+    plt.show()
+    
+if __name__ == "__main__":
+    main()
