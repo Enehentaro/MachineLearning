@@ -35,12 +35,6 @@ def main():
     print(os.environ["CUDA_VISIBLE_DEVICES"])
 
     ml_package.controller.ml_controller.train_ml_model(model_name=args.model)
-    # train_explanatory_variable, test_explanatory_variable, \
-    # train_objective_variable, test_objective_variable = \
-    #     ml_package.controller.ml_controller.RoI_preprocessing()
-
-    # # ハイパーパラメータサーチ
-    # ml_package.controller.ml_controller.hyperparameter_search(model_name=args.model, X=train_explanatory_variable, y=train_objective_variable)
     
 if __name__ == "__main__":
     main()

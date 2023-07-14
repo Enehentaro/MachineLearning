@@ -16,7 +16,7 @@ from keras.models import Sequential
 
 import ml_package
 
-from ml_package.model import log_controller
+from ml_package.model import log_manager
 
 
 # gpuの確認
@@ -98,8 +98,8 @@ class MLP:
             # 決定したMLPの形状表示
             self.model.summary()
             # tensorboard用のログディレクトリ作成
-            control_log = log_controller.ControlLog()
-            log_file_name, log_dir_path = control_log.decide_filename(what_log="TensorBoardLogs")
+            control_log = log_manager.ControlLog()
+            log_dir_path, log_file_name = control_log.decide_filename(what_log="TensorBoardLogs")
             tb_log_dir = log_dir_path + log_file_name
             callbacks = [EarlyStopping(monitor="val_mae", patience=patience, verbose=verbose, restore_best_weights=True),
                          TensorBoard(log_dir=tb_log_dir, histogram_freq=1)]

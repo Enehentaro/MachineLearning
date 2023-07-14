@@ -26,16 +26,19 @@ class DataModel(object):
     Parameters
     ----------
     data_path : str, default=DEFAULT_DATA_PATH
-        Set data path where you want to use for ML.
+        Data path where you want to use for ML.
 
     output_result_path : str, dfault=DEFAULT_OUTPUT_RESULT_PATH
-        Set the path where result will be output.
+        A path where result will be output.
     """
 
-    def __init__(self, data_path=DEFAULT_DATA_PATH, 
-                 output_result_path=DEFAULT_OUTPUT_RESULT_PATH):
+    def __init__(self, data_path=None, output_result_path=None):
         """Setup path of data to be loaded"""
         self.current_dir_path = os.getcwd()
+        if not data_path:
+            data_path = DEFAULT_DATA_PATH
+        if not output_result_path:
+            output_result_path = DEFAULT_OUTPUT_RESULT_PATH
         self.data_path = data_path
         self.output_result_path = output_result_path
         os.makedirs(output_result_path, exist_ok=True)
@@ -44,10 +47,8 @@ class DataModel(object):
 class RoICsvDataModel(DataModel):
     """Definition of class that manage csv data of RoI"""
 
-    def __init__(self, data_path=DEFAULT_DATA_PATH, 
-                 output_result_path=DEFAULT_OUTPUT_RESULT_PATH):
-        super().__init__(data_path=data_path, 
-                         output_result_path=output_result_path)
+    def __init__(self, data_path=None, output_result_path=None):
+        super().__init__(data_path=data_path, output_result_path=output_result_path)
         self.df_loaded_data = self.load_data()
         
     def load_data(self):
@@ -93,10 +94,9 @@ class RoICsvDataModel(DataModel):
 
         Returns
         -------
-        training and test data : tuple(
-            train_explanatory_variable, test_explanatory_variable,
-            train_objective_variable, test_objective_variable
-        )
+        rain_explanatory_variable, test_explanatory_variable,
+        train_objective_variable, test_objective_variable : 
+            tuple(pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame)
         """
         if dummy_variable_list is None:
             dummy_variable_list = ["exhaust"]

@@ -1,5 +1,7 @@
 """
 Define hyperparameter searcher
+TODO Make optimize setting like TPE or Random searcher
+     Write docs of decorator
 """
 import sys
 import traceback
@@ -8,7 +10,7 @@ import optuna
 
 import ml_package
 
-from ml_package.model import log_controller
+from ml_package.model import log_manager
 from ml_package.model import optimizer
 
 
@@ -18,112 +20,115 @@ class OptunaSearcher(object):
     
     Parameters
     ----------
-    data_path : str, default=DEFAULT_DATA_PATH
-        Set data path where you want to use for ML.
-
-    output_result_path : str, dfault=DEFAULT_OUTPUT_RESULT_PATH
-        Set the path where result will be output.
+    study_name : str
+        optuna sutudy name
+    
+    sqlite_path : str
+        sqlite file path where optuna results will be output
     """
 
-    def __init__(self, n_trials=10, timeout=None):
-        self.n_trials = n_trials
-        self.timeout = timeout
-
+    def __init__(self):
+        self.study_name = None
+        self.sqlite_path = None
 
 
 class OptunaHyperparameterSearcher(OptunaSearcher):
     """Definition of class that search hyperparameter by using optuna"""
     
-    def __init__(self, n_trials=10, timeout=None):
-        super().__init__(n_trials=n_trials, timeout=timeout)
-
-    def control_log_decorator(self, func):
+    def __init__(self):
+        super().__init__()
+    
+    def control_log_decorator(func):
         def wrapper(self, *args, **kwargs):
-            control_log = log_controller.ControlLog()
-            sqlite_path = control_log.set_log_filehandler(logger_name=__name__)
-            study_name = control_log.decide_filename()
+            log_dir_path, log_file_name = \
+                log_manager.OptunaLogModel.decide_filename(what_log="../OptunaLogs")
+            self.study_name = log_file_name
+            control_log = log_manager.OptunaLogModel(
+                log_dir_path=log_dir_path, log_file_name=log_file_name
+            )
+            self.sqlite_path = control_log.set_sqlite_path()
+
             try:
-                func(*args, **kwargs)
+                func(self, *args, **kwargs)
             except Exception as error:
                 t, v, tb = sys.exc_info()
                 traceback.print_tb(tb)
                 print(t, v)
             finally:
-                #ハンドラの削除．これを行わないとログファイルが上書きされる．
+                # If you do not delete handler, you access to previous logs.
                 control_log.kill_handler()
         return wrapper
-    
-    # @control_log_decorator
-    # def hyperparameter_search(self, model_name, X, y, restart=False):
-    #     #ハイパーパラメータの探索
-    #     objective = optimizer.Objective(model_name=model_name, X=X, y=y ,n_trials=self.n_trials)
-    #     #計算資源があるときはランダムサーチ，無ければTPESampler
-    #     #storageのパスにすでにDBファイルがあれば，それを読み込むのがload_if_exists
-    #     #     study = optuna.create_study(directions=["minimize"], study_name=model_name+"_"+study_name[0],
-    #     #                                 sampler=optuna.samplers.TPESampler(), pruner=optuna.pruners.HyperbandPruner(),
-    #     #                                 storage=sqlite_path, load_if_exists=True)
-    #     study = optuna.create_study(directions=["minimize"], study_name=model_name+"_"+study_name[0],
-    #                                 sampler=optuna.samplers.RandomSampler(), pruner=optuna.pruners.MedianPruner(),
-    #                                 storage=sqlite_path, load_if_exists=True)
 
-    #     print(f"study name: {study_name[0]}")
+    @control_log_decorator
+    def hyperparameter_search(self, model_name, X, y, 
+                              restart=False, n_trials=10, timeout=None):
+        """
+        Search hyperparameter by using optuna
 
-    #     #最適化の実行．n_trialsは何回実行するか．指定しなければできるだけやる．他にもtimeoutは計算にかける時間の上限値を秒単位で指定できる
-    #     #n_trialsまたはtimeoutのどちらかは指定したほうが良い．でないと永遠に計算し続け，pcが重くなる．
-    #     study.optimize(objective, n_trials=self.n_trials, timeout=self.timeout)
+        parameter
+        ---------
+        model_name : str
+            AI model name which you want to use.
 
+        X : Input data. It could be:
+            - A Numpy array (or array-like), or a list of arrays
+                (in case the model has multiple inputs).
+            - A TensorFlow tensor, or a list of tensors
+                (in case the model has multiple inputs).
+            - A dict mapping input names to the corresponding array/tensors,
+                if the model has named inputs.
+            - A `tf.data` dataset. Should return a tuple
+                of either `(inputs, targets)` or
+                `(inputs, targets, sample_weights)`.
+            - A generator or `keras.utils.Sequence` returning `(inputs,
+                targets)` or `(inputs, targets, sample_weights)`.
+            - A `tf.keras.utils.experimental.DatasetCreator`, which wraps a
+                callable that takes a single argument of type
 
-def hyperparameter_search(model_name, X, y, restart=False):
-    #前回の続きから最適化を開始するかのスイッチ．Trueでリスタートする．
+        y : Target data. Like the input data `X`,
+            it could be either Numpy array(s) or TensorFlow tensor(s).
+            It should be consistent with `X` (you cannot have Numpy inputs and
+            tensor targets, or inversely). If `X` is a dataset, generator,
+            or `keras.utils.Sequence` instance, `y` should
+            not be specified (since targets will be obtained from `X`).
 
-    if restart:
-        #前回の続きから最適化を開始してみる(sutdy_nameが残っていないとできない．study_nameが残っていないときはoptunaログから自分で調査して与えればok)
-    #     study_name = 
-        study = optuna.load_study(study_name=model_name+"_"+study_name[0], storage=sqlite_path)
-        study.trials_dataframe()
-        control_log = log_controller.ControlLog(*study_name)
-        sqlite_path = control_log.set_log_filehandler(logger_name=__name__)
+        restart : bool, default=False
+            Restart switch to restart hyperparameter search by using optuna.
+
+        n_trials : int, default=10
+            Number of optimization iterations.
+
+        timeout : int, default=None
+            Time limit of optimization.
+        """
+
+#     if restart:
+#         #前回の続きから最適化を開始してみる(sutdy_nameが残っていないとできない．study_nameが残っていないときはoptunaログから自分で調査して与えればok)
+#     #     study_name = 
+#         study = optuna.load_study(study_name=model_name+"_"+study_name[0], storage=sqlite_path)
+#         study.trials_dataframe()
+#         control_log = log_controller.OptunaLogModel(*study_name)
+#         sqlite_path = control_log.set_sqlite_path()
         
-    else:
-        control_log = log_controller.ControlLog()
-        # sqlite_path = control_log.set_log_filehandler(logger_name=str(__name__))
-        sqlite_path = control_log.set_log_filehandler()
-        study_name = control_log.decide_filename()
+#     else:
+#         log_dir_path, log_file_name = \
+#             log_controller.OptunaLogModel.decide_filename(what_log="../OptunaLogs")
+#         study_name = log_file_name
+#         control_log = log_controller.OptunaLogModel(
+#             log_dir_path=log_dir_path, log_file_name=log_file_name
+#         )
+#         # sqlite_path = control_log.set_log_filehandler(logger_name=str(__name__))
 
-    #訓練時のパラメータ設定
-    n_trials=2
-    timeout=None
+#         sqlite_path = control_log.set_sqlite_path()
 
-    """
-    最後のcontrol_log.kill_handler()が回らないとログが不必要に上書きされるので例外処理で最後まで必ず回るようにする．
-    exceptがtry内でエラーが生じたときの処理内容
-    finallyはtry内でエラーが生じたとき，生じなかったときどちらも動く処理
-    """
-
-    try:
-        #ハイパーパラメータの探索
         objective = optimizer.Objective(model_name=model_name, X=X, y=y ,n_trials=n_trials)
-
         #計算資源があるときはランダムサーチ，無ければTPESampler
         #storageのパスにすでにDBファイルがあれば，それを読み込むのがload_if_exists
-    #     study = optuna.create_study(directions=["minimize"], study_name=model_name+"_"+study_name[0],
-    #                                 sampler=optuna.samplers.TPESampler(), pruner=optuna.pruners.HyperbandPruner(),
-    #                                 storage=sqlite_path, load_if_exists=True)
-        study = optuna.create_study(directions=["minimize"], study_name=model_name+"_"+study_name[0],
+        #     study = optuna.create_study(directions=["minimize"], study_name=model_name+"_"+study_name[0],
+        #                                 sampler=optuna.samplers.TPESampler(), pruner=optuna.pruners.HyperbandPruner(),
+        #                                 storage=sqlite_path, load_if_exists=True)
+        study = optuna.create_study(directions=["minimize"], study_name=model_name+"_"+self.study_name,
                                     sampler=optuna.samplers.RandomSampler(), pruner=optuna.pruners.MedianPruner(),
-                                    storage=sqlite_path, load_if_exists=True)
-
-        print(f"study name: {study_name[0]}")
-
-        #最適化の実行．n_trialsは何回実行するか．指定しなければできるだけやる．他にもtimeoutは計算にかける時間の上限値を秒単位で指定できる
-        #n_trialsまたはtimeoutのどちらかは指定したほうが良い．でないと永遠に計算し続け，pcが重くなる．
+                                    storage=self.sqlite_path, load_if_exists=True)
+        print(f"study name: {self.study_name}")
         study.optimize(objective, n_trials=n_trials, timeout=timeout)
-
-    except Exception as error:
-        t, v, tb = sys.exc_info()
-        traceback.print_tb(tb)
-        print(t, v)
-
-    finally:
-        #ハンドラの削除．これを行わないとログファイルが上書きされる．
-        control_log.kill_handler()
