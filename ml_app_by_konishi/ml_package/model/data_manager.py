@@ -57,20 +57,48 @@ class RoICsvDataModel(DataModel):
 
         Returns
         -------
-        self.df_data_loaded : pandas DataFrame
+        df_loaded_data : pandas DataFrame
             Air conditioning and RoI are stored in the pandas DataFrame
         """
-        self.df_loaded_data = pd.read_csv(f"{self.data_path}", 
+        df_loaded_data = pd.read_csv(f"{self.data_path}", 
                                           index_col="case_name")
-        return self.df_loaded_data
+        return df_loaded_data
+    
+    def train_test_split_by_office_type(self, data, test_office_list):
+        """
+        train test split by office type
 
-    def preprocess_data(self, RoI_name="countTimeMean_onlyFloating", 
-                        dummy_variable_list=None, explanatory_variable_list=None):
+        Parameters
+        ----------
+        data : pd.DataFrame
+            Data to be split. Data must have column["office"].
+        
+        test_office_list : list[test office name to be used]
+            Specify what you want to use as test data.
+
+        
+        Returns
+        -------
+        train_bool_list, test_bool_list :
+            list[bool list of training data index], list[bool list of test data index]
+        """
+        test_bool_list = np.zeros(data.shape[0], dtype=bool)
+        for test_office in test_office_list:
+            test_bool_list += data["office"]==test_office
+        train_bool_list = [not x for x in test_bool_list]
+        return train_bool_list, test_bool_list
+
+    def preprocess_data(self, split_method, RoI_name="countTimeMean_onlyFloating",
+                        dummy_variable_list=None, explanatory_variable_list=None, 
+                        std=True,):
         """
         Preprocess data. e.g. make dummy variable, train test split...
 
         Parameters
         ----------
+        split_method : str
+            Specify what you want to use train test split method.
+
         RoI_name : str, default="countTimeMean_onlyFloating"
             RoI name to be used.
 
@@ -94,7 +122,7 @@ class RoICsvDataModel(DataModel):
 
         Returns
         -------
-        rain_explanatory_variable, test_explanatory_variable,
+        train_explanatory_variable, test_explanatory_variable,
         train_objective_variable, test_objective_variable : 
             tuple(pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame)
         """
@@ -120,22 +148,53 @@ class RoICsvDataModel(DataModel):
         df_objective_variable = df_preprocessed_data[RoI_name]
 
         # Standardization of only explanatory variable
-        stdscaler = preprocessing.StandardScaler()
-        stdscaler.fit(df_explanatory_variable)
-        np_explanatory_variable_std = stdscaler.transform(df_explanatory_variable)
-        df_explanatory_variable_std = pd.DataFrame(
-            np_explanatory_variable_std, 
-            index=df_explanatory_variable.index, 
-            columns=df_explanatory_variable.columns
-        )
+        if std:
+            stdscaler = preprocessing.StandardScaler()
+            stdscaler.fit(df_explanatory_variable)
+            np_explanatory_variable_std = stdscaler.transform(df_explanatory_variable)
+            df_explanatory_variable = pd.DataFrame(
+                np_explanatory_variable_std, 
+                index=df_explanatory_variable.index, 
+                columns=df_explanatory_variable.columns
+            )
 
         # Split training and test data
-        train_explanatory_variable, test_explanatory_variable = \
-            train_test_split(df_explanatory_variable_std, test_size=0.3, random_state=0)
-        train_objective_variable = \
-            df_objective_variable.loc[train_explanatory_variable.index]
-        test_objective_variable = \
-            df_objective_variable.loc[test_explanatory_variable.index]
+        if split_method == "random":
+            train_explanatory_variable, test_explanatory_variable = \
+                train_test_split(df_explanatory_variable, test_size=0.3, random_state=0)
+            train_objective_variable = \
+                df_objective_variable.loc[train_explanatory_variable.index]
+            test_objective_variable = \
+                df_objective_variable.loc[test_explanatory_variable.index]
+        elif split_method == "office":
+            train_bool_list, test_bool_list = \
+                self.train_test_split_by_office_type(
+                data=self.df_loaded_data, test_office_list=["office1"]
+                )
+            train_explanatory_variable = df_explanatory_variable[train_bool_list]
+            test_explanatory_variable = df_explanatory_variable[test_bool_list]
+            train_objective_variable = df_objective_variable[train_bool_list]
+            test_objective_variable = df_objective_variable[test_bool_list]
+            #shuffle data
+            train_explanatory_variable = \
+                train_explanatory_variable.sample(frac=1, random_state=1)
+            train_objective_variable = \
+                train_objective_variable.reindex(index=train_explanatory_variable.index)
+            test_explanatory_variable = \
+                test_explanatory_variable.sample(frac=1, random_state=1)
+            test_objective_variable = \
+                test_objective_variable.reindex(index=test_explanatory_variable.index)
 
         return train_explanatory_variable, test_explanatory_variable, \
                train_objective_variable, test_objective_variable
+
+
+if __name__ == "__main__":
+    m = RoICsvDataModel()
+    # train_explanatory_variable, test_explanatory_variable, \
+    # train_objective_variable, test_objective_variable = \
+    #     m.preprocess_data()
+    train_explanatory_variable, test_explanatory_variable, \
+    train_objective_variable, test_objective_variable = \
+        m.train_test_split_by_office_type()
+    print(test_objective_variable)

@@ -24,6 +24,10 @@ def argparser():
         "-m", "--model", type=str, required=True, 
         help="Select machine learning model."
     )
+    parser.add_argument(
+        "-s", "--split_method", type=str, required=True, 
+        help="Select train test split method. \"random\" or \"office\""
+    )
     args = parser.parse_args()
     return args
 
@@ -34,7 +38,10 @@ def main():
     os.environ["CUDA_VISIBLE_DEVICES"] = "0"
     print(os.environ["CUDA_VISIBLE_DEVICES"])
 
-    ml_package.controller.ml_controller.train_ml_model(model_name=args.model)
-    
+    ml_package.controller.ml_controller.train_ml_model(
+        model_name=args.model, split_method=args.split_method
+    )
+
+
 if __name__ == "__main__":
     main()
