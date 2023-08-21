@@ -34,15 +34,23 @@ class OptunaSearcher(object):
 
 
 class OptunaHyperparameterSearcher(OptunaSearcher):
-    """Definition of class that search hyperparameter by using optuna"""
+    """
+    Definition of class that search hyperparameter by using optuna
+
+    Parameters
+    ----------
+    optuna_logs_dir : str
+        directory path where optuna logs will be output
+    """
     
-    def __init__(self):
+    def __init__(self, optuna_logs_dir):
         super().__init__()
+        self.optuna_logs_dir = optuna_logs_dir
     
     def control_log_decorator(func):
         def wrapper(self, *args, **kwargs):
             log_dir_path, log_file_name = \
-                log_manager.OptunaLogModel.decide_filename(what_log="../OptunaLogs")
+                log_manager.OptunaLogModel.decide_filename(what_log=self.optuna_logs_dir)
             self.study_name = log_file_name
             control_log = log_manager.OptunaLogModel(
                 log_dir_path=log_dir_path, log_file_name=log_file_name

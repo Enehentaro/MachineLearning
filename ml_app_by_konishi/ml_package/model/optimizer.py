@@ -68,8 +68,8 @@ class Objective(object):
         kf = KFold(n_splits=self.n_splits, shuffle=True, random_state=1)
         for _, (train_index, test_index) in enumerate(kf.split(X=self.X, y=self.y)):
             if self.model_name == "MLP":
-                history = model.fit(tr_x=self.X.iloc[train_index], tr_y=self.y.iloc[train_index], 
-                                    va_x=self.X.iloc[test_index], va_y=self.y.iloc[test_index])
+                history = model.fit(tr_X=self.X.iloc[train_index], tr_y=self.y.iloc[train_index], 
+                                    va_X=self.X.iloc[test_index], va_y=self.y.iloc[test_index])
                 #履歴の最後の１０エポック
                 val_loss_list = history.history['val_loss'][-10:]
                 loss_max = np.max(val_loss_list) #終盤の誤差の最大値（振動抑制が目的）

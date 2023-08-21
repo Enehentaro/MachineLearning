@@ -82,5 +82,5 @@ class OptunaLogModel(LogModel):
         # optuna.logging.set_verbosity(optuna.logging.CRITICAL)
         # print(f"Current log level: {optuna.logging.get_verbosity()}")
         sqlite_path = "sqlite:///" + self.log_dir_path + "optuna.sqlite3"
-        print(f"SQLite file path: {sqlite_path}")
+        self.logger.info(sqlite_path)
         return sqlite_path

@@ -5,7 +5,6 @@ import pprint
 
 import pandas as pd
 import tensorflow as tf
-from tensorflow.python.client import device_lib
 from tensorflow import keras
 from keras import optimizers
 from keras.callbacks import EarlyStopping, TensorBoard
@@ -22,7 +21,8 @@ from ml_package.model import log_manager
 
 
 # gpuの確認
-pprint.pprint(device_lib.list_local_devices())
+# from tensorflow.python.client import device_lib
+# pprint.pprint(device_lib.list_local_devices())
 
 
 class MachineLearningModel(object):
@@ -37,7 +37,7 @@ class MLP(MachineLearningModel):
         self.params = params
         self.model = None
     
-    def fit(self, tr_x, tr_y, va_x, va_y, verbose=0, callback_type="early_stopping"):
+    def fit(self, tr_X, tr_y, va_X, va_y, verbose=0, callback_type="early_stopping"):
         input_dropout = self.params["input_dropout"]
         hidden_layers = self.params["hidden_layers"]
         hidden_units = self.params["hidden_units"]
@@ -50,7 +50,7 @@ class MLP(MachineLearningModel):
         batch_size = self.params["batch_size"]
         
         #input shape must be tuple
-        inputs = keras.Input(shape=(tr_x.shape[1],))
+        inputs = keras.Input(shape=(tr_X.shape[1],))
         hidden = Dropout(rate=input_dropout)(inputs)
         for _ in range(hidden_layers):
             hidden = Dense(units=hidden_units, kernel_initializer=kernel_initializer)(hidden)
@@ -98,13 +98,13 @@ class MLP(MachineLearningModel):
             print("TensorBoardLogs path:", tb_log_dir)
 
         history = self.model.fit(
-            tr_x, tr_y, epochs=max_epoch, batch_size=batch_size, verbose=verbose,
-            validation_data=(va_x, va_y), callbacks=callbacks
+            tr_X, tr_y, epochs=max_epoch, batch_size=batch_size, verbose=verbose,
+            validation_data=(va_X, va_y), callbacks=callbacks
         )
         
         return history
         
-    def predict(self, x):
+    def predict(self, X):
         # モデルを使用して予測するときにindexを元データと揃えておかないとmean_squared_errorを計算するときにNanとなりerrorが起きる
-        y_pred = pd.DataFrame(self.model.predict(x), index=x.index)
+        y_pred = pd.DataFrame(self.model.predict(X), index=X.index)
         return y_pred
