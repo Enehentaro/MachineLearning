@@ -44,13 +44,13 @@ def test_ml(model_name, split_method):
     train_explanatory_variable, test_explanatory_variable, \
     train_objective_variable, test_objective_variable = \
         RoI_preprocessor.preprocess_data(split_method=split_method)
-    evaluator = model_evaluator.Evaluator(
-        optuna_logs_dir=DEFAULT_OPTUNALOGS_PATH,
+    evaluator = model_evaluator.OptunaEvaluator(
         model_name=model_name,
         tr_X=train_explanatory_variable,
         tr_y=train_objective_variable,
         va_X=test_explanatory_variable,
-        va_y=test_objective_variable
+        va_y=test_objective_variable,
+        optuna_logs_dir=DEFAULT_OPTUNALOGS_PATH
     )
     evaluator.evaluate()
 

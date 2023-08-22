@@ -3,6 +3,7 @@ Define data manager model to process data in a variety of ways
 TODO Separate standardization of training and test data
 """
 import os
+from pathlib import Path
 
 import numpy as np
 import pandas as pd
@@ -187,6 +188,43 @@ class RoICsvDataModel(DataModel):
 
         return train_explanatory_variable, test_explanatory_variable, \
                train_objective_variable, test_objective_variable
+
+
+class FileModel(object):
+    """
+    Base file model
+    """
+
+    def __init__(self):
+        pass
+
+    @staticmethod
+    def search_latest_file_in_dir(search_dir_path, glob_path, num_latest_files):
+        """
+        train test split by office type
+
+        Parameters
+        ----------
+        search_dir_path : str
+            Specify directory path to search.
+        
+        glob_path : str
+            Specify glob path what you want to search.
+            e.g. /*/*.txt
+
+        num_latest_files : int
+            The number of latest files you want to get.
+
+
+        Returns
+        -------
+        latest_file_path : list[tuple(latest file path, file modified UNIX time)]
+        """
+        search_file_path = \
+            [(p, p.stat().st_ctime) for p in Path(search_dir_path).glob(glob_path)]
+        latest_file_path = \
+            sorted(search_file_path, key=lambda x: x[1], reverse=True)[: num_latest_files]
+        return latest_file_path
 
 
 if __name__ == "__main__":

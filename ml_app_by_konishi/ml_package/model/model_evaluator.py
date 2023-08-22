@@ -1,7 +1,6 @@
 """
 Define model evaluator
 """
-from pathlib import Path
 import re
 
 import optuna
@@ -10,6 +9,7 @@ from sklearn.metrics import mean_absolute_error
 from sklearn.metrics import mean_squared_error
 import xgboost as xgb
 
+from ml_package.model import data_manager
 from ml_package.model import define_model
 
 
@@ -18,23 +18,35 @@ class Evaluator(object):
     Base machinelearning model evaluator.
     """
 
-    def __init__(self, optuna_logs_dir, model_name, tr_X, tr_y, va_X, va_y):
-        self.optuna_logs_dir = optuna_logs_dir
+    def __init__(self, model_name, tr_X, tr_y, va_X, va_y):
         self.model_name = model_name
         self.tr_X = tr_X
         self.tr_y = tr_y
         self.va_X = va_X
         self.va_y = va_y
 
+
+class OptunaEvaluator(Evaluator):
+    """
+    Machinelearning model evaluator by result of Optuna.
+    """
+    def __init__(self, model_name, tr_X, tr_y, va_X, va_y, optuna_logs_dir):
+        super().__init__(model_name, tr_X, tr_y, va_X, va_y)
+        self.optuna_logs_dir = optuna_logs_dir
+
     def evaluate(self):
-        study_logs_path = [(p, p.stat().st_ctime) for p in Path(self.optuna_logs_dir).glob("*/*.txt")]
-        latest_study_path = sorted(study_logs_path, key=lambda x: x[1], reverse=True)[0]
-        with latest_study_path[0].open(mode="r") as f:
+        latest_study_path = \
+            data_manager.FileModel.search_latest_file_in_dir(
+            search_dir_path=self.optuna_logs_dir,
+            glob_path="*/*.txt",
+            num_latest_files=1
+            )
+        with latest_study_path[0][0].open(mode="r") as f:
             sqlite_path = f.readline().rstrip()
             study_name = re.search(r"[a-zA-Z]+_\d+$", f.readline()).group()
         study = optuna.load_study(study_name=study_name, storage=sqlite_path)
 
-        print("best model in this search")
+        print(f"best model in study {study_name}")
         print(f"best score: {study.best_value}")
         print(f"best params: {study.best_params}")
 
