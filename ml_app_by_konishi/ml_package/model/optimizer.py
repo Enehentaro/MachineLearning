@@ -27,7 +27,7 @@ class Objective(object):
         # Clear clutter from previous Keras session graphs.
         clear_session()
 
-        if self.model_name == "MLP":
+        if self.model_name.casefold() == "MLP".casefold():
             params = {
                 "input_dropout" : trial.suggest_float("input_dropout", 0.0, 0.2, step=0.05),
                 "hidden_layers" : trial.suggest_int("hidden_layers", 3, 10),
@@ -42,7 +42,7 @@ class Objective(object):
             }
             model = define_model.MLP(params)
 
-        elif self.model_name == "XGB":
+        elif self.model_name.casefold() == "XGB".casefold():
             params = {
                 "max_depth" : trial.suggest_int("max_depth", 1, 10),
                 "min_child_weight" : trial.suggest_int("min_child_weight", 1, 5),

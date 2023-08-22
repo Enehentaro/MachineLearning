@@ -26,7 +26,7 @@ def argparser():
         help="Select execute type by int. 0:training and test, 1:only training, 2:only test"
     )
     parser.add_argument(
-        "-c", "--cpu", type=str, default="",
+        "-c", "--cpu", type=str, default="0",
         help="If you want to use oneDNN, set to 1."
     )
     parser.add_argument(
