@@ -10,9 +10,32 @@ DEFAULT_OPTUNALOGS_PATH = "../OptunaLogs"
 
 def train_and_test_ml(model_name, split_method):
     RoI_preprocessor = data_manager.RoICsvDataModel()
-    train_explanatory_variable, test_explanatory_variable, \
-    train_objective_variable, test_objective_variable = \
-        RoI_preprocessor.preprocess_data(split_method=split_method)
+    if model_name.casefold() == "PointNet".casefold():
+        train_explanatory_variable, test_explanatory_variable, \
+        train_objective_variable, test_objective_variable = \
+            RoI_preprocessor.preprocess_data(
+                split_method=split_method,
+                explanatory_variable_list=[
+                    "office", "aircon", "ventilation", 
+                    "exhaust_a", "exhaust_b", "exhaust_off"
+                ]
+            )
+        point_cloud_preprocessor = data_manager.PointCloudDataModel()
+        train_explanatory_variable = \
+            point_cloud_preprocessor.get_office_dataset(
+                df_core=train_explanatory_variable,
+                std=True
+            )
+        test_explanatory_variable = \
+            point_cloud_preprocessor.get_office_dataset(
+                df_core=test_explanatory_variable,
+                std=True
+            )
+    else:
+        train_explanatory_variable, test_explanatory_variable, \
+        train_objective_variable, test_objective_variable = \
+            RoI_preprocessor.preprocess_data(split_method=split_method)
+        
     searcher = hyperparameter_searcher.OptunaHyperparameterSearcher(
         optuna_logs_dir=DEFAULT_OPTUNALOGS_PATH
     )
@@ -23,6 +46,16 @@ def train_and_test_ml(model_name, split_method):
         y=train_objective_variable,
         n_trials=2
     )
+
+    evaluator = model_evaluator.OptunaEvaluator(
+        model_name=model_name,
+        tr_X=train_explanatory_variable,
+        tr_y=train_objective_variable,
+        va_X=test_explanatory_variable,
+        va_y=test_objective_variable,
+        optuna_logs_dir=DEFAULT_OPTUNALOGS_PATH
+    )
+    evaluator.evaluate()
 
 def train_ml(model_name, split_method):
     RoI_preprocessor = data_manager.RoICsvDataModel()

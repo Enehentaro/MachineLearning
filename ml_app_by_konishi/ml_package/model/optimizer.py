@@ -6,6 +6,7 @@ from tqdm.autonotebook import tqdm
 import xgboost as xgb
 
 from ml_package.model import define_model
+from ml_package.model.define_my_error import ModelNotFoundError
 
 
 class Objective(object):
@@ -60,20 +61,58 @@ class Objective(object):
             }
             model = xgb.XGBRegressor(**params)
 
+        elif self.model_name.casefold() == "PointNet".casefold():
+            params = {
+                "dense_layers" : trial.suggest_int('dense_layers', 0, 4, step=1),
+                "activation" : trial.suggest_categorical('activation', ["relu", "leaky_relu", "elu"]), 
+                "dropout" : trial.suggest_categorical('dropout', [0.0, 0.3, 0.5]),
+                "conv_layers" : trial.suggest_int('conv_layers', 1, 3, step=1),
+                "optimizer_lr" : trial.suggest_float('optimizer_lr', 1e-5, 1e-1, log=True),
+                "batch_size" : trial.suggest_categorical('batch_size', [4, 8, 16, 32, 64, 128])
+            }
+            for i in range(params["dense_layers"]):
+                units = {
+                    f"units_{i}" : trial.suggest_int(f"units_{i}", 64, 512, step=64)
+                }
+                params.update(units)
+            for i in range(params["conv_layers"]):
+                conv_filters = {
+                    f"conv_filters_{i}" : trial.suggest_int(f"conv_filters_{i}", 32, 256, step=32)
+                }
+                params.update(conv_filters)
+            model = define_model.PointNet(params)
+
         else:
-            print("***No such model is defined***")
+            raise ModelNotFoundError(f"No such model is defined: {self.model_name}")
         
         scores = []
         metrics = ["neg_mean_squared_error", "neg_mean_absolute_error"]
         kf = KFold(n_splits=self.n_splits, shuffle=True, random_state=1)
         for _, (train_index, test_index) in enumerate(kf.split(X=self.X, y=self.y)):
-            if self.model_name == "MLP":
-                history = model.fit(tr_X=self.X.iloc[train_index], tr_y=self.y.iloc[train_index], 
-                                    va_X=self.X.iloc[test_index], va_y=self.y.iloc[test_index])
+            if self.model_name.casefold() == "MLP".casefold():
+                history = model.fit(
+                    tr_X=self.X.iloc[train_index], 
+                    tr_y=self.y.iloc[train_index], 
+                    va_X=self.X.iloc[test_index], 
+                    va_y=self.y.iloc[test_index]
+                )
                 #履歴の最後の１０エポック
                 val_loss_list = history.history['val_loss'][-10:]
                 loss_max = np.max(val_loss_list) #終盤の誤差の最大値（振動抑制が目的）
                 scores.append(loss_max)
+
+            elif self.model_name.casefold() == "PointNet".casefold():
+                history = model.fit(
+                    tr_X=self.X.iloc[train_index], 
+                    tr_y=self.y.iloc[train_index], 
+                    va_X=self.X.iloc[test_index], 
+                    va_y=self.y.iloc[test_index]
+                )
+                #履歴の最後の１０エポック
+                val_loss_list = history.history['val_loss'][-10:]
+                loss_max = np.max(val_loss_list) #終盤の誤差の最大値（振動抑制が目的）
+                scores.append(loss_max)
+
 
             elif self.model_name == "XGB":
                 model.fit(X=self.X.iloc[train_index], y=self.y.iloc[train_index])

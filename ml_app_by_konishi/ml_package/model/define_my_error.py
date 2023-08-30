@@ -7,3 +7,6 @@ class StandardizationError(Exception):
 
 class CasenameSplitError(Exception):
     pass
+
+class ModelNotFoundError(Exception):
+    pass

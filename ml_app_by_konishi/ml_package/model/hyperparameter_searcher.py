@@ -82,9 +82,11 @@ class OptunaHyperparameterSearcher(OptunaSearcher):
         split_method : str
             Specify what you want to use train test split method.
 
-        X : Input data. It could be pd.DataFrame
+        X : pd.DataFrame
+            Input data.
 
-        y : Target data. Like the input data `X`
+        y : pd.DataFrame
+            Target data.
 
         restart : bool, default=False
             Restart switch to restart hyperparameter search by using optuna.

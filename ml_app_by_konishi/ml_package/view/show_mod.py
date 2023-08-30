@@ -95,7 +95,20 @@ def show_office_residual_plot(train_x, train_y, test_x, test_y, data_indices, of
     plt.tight_layout()
     plt.show()
     
+def plot3d_points(point_cloud, office, output_path):
+    """
+    点群データ（２次元配列）をプロット
+    """
+    fig = plt.figure(figsize=(5, 5))
+    ax = fig.add_subplot(projection="3d")
+    ax.scatter(point_cloud[:, 0], point_cloud[:, 1], point_cloud[:, 2], alpha=0.4, s=2)
+    # ax.set_axis_off()
+    fig.savefig(f"{output_path}{office}_point_cloud.png")
 
+    plt.clf()
+    plt.close()
+
+    
 
 
     # # オフィスのRoIをプロットして出力
