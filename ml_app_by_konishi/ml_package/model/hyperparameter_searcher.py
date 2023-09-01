@@ -15,10 +15,19 @@ from ml_package.model import log_manager
 from ml_package.model import optimizer
 
 
-class OptunaSearcher(object):
+class HyperparameterSearcher(object):
     """
-    Base hyperparameter searcher by using optuna
-    
+    Base hyperparameter searcher
+    """
+
+    def __init__(self):
+        pass
+
+
+class OptunaHyperparameterSearcher(HyperparameterSearcher):
+    """
+    Definition of class that search hyperparameter by using optuna
+
     Parameters
     ----------
     study_name : str
@@ -26,25 +35,15 @@ class OptunaSearcher(object):
     
     sqlite_path : str
         sqlite file path where optuna results will be output
-    """
 
-    def __init__(self):
-        self.study_name = None
-        self.sqlite_path = None
-
-
-class OptunaHyperparameterSearcher(OptunaSearcher):
-    """
-    Definition of class that search hyperparameter by using optuna
-
-    Parameters
-    ----------
     optuna_logs_dir : str
         directory path where optuna logs will be output
     """
     
     def __init__(self, optuna_logs_dir):
         super().__init__()
+        self.study_name = None
+        self.sqlite_path = None
         self.optuna_logs_dir = optuna_logs_dir
     
     def control_log_decorator(func):

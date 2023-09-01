@@ -5,7 +5,7 @@ import sys
 import warnings
 
 from sklearn.exceptions import ConvergenceWarning
-from tensorflow import config
+from tensorflow.python.client import device_lib
 
 import ml_package
 
@@ -43,26 +43,34 @@ def argparser():
 def main():
     args = argparser()
 
+    os.environ["TF_ENABLE_ONEDNN_OPTS"] = args.cpu
+
     # GPUの環境変数設定
-    gpus = config.list_physical_devices(device_type = 'GPU')
+    devices = device_lib.list_local_devices()
+    gpus = []
+    for device in devices:
+        if device.device_type == "GPU":
+            gpus.append(device)
     if gpus:
-        print(f">> GPU detected. {gpus[0].name}")
+        for gpu in gpus:
+            print(f">> GPU detected. {gpu.physical_device_desc}")
         print("Set GPU number if you want to use GPU.")
         os.environ["CUDA_VISIBLE_DEVICES"] = input(">>")
 
-    os.environ["TF_ENABLE_ONEDNN_OPTS"] = args.cpu
-
     if args.execute_type == 0:
         ml_package.controller.ml_controller.train_and_test_ml(
-            model_name=args.model, split_method=args.split_method
+            model_name=args.model.casefold(), 
+            split_method=args.split_method.casefold()
         )
     elif args.execute_type == 1:
         ml_package.controller.ml_controller.train_ml(
-            model_name=args.model, split_method=args.split_method
+            model_name=args.model.casefold(), 
+            split_method=args.split_method.casefold()
         )
     elif args.execute_type == 2:
         ml_package.controller.ml_controller.test_ml(
-            model_name=args.model, split_method=args.split_method
+            model_name=args.model.casefold(), 
+            split_method=args.split_method.casefold()
         )
 
 

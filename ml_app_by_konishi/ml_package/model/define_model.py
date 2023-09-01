@@ -264,6 +264,23 @@ class PointNet(MachineLearningModel):
 
         return model
     
+    def pointnet(self, input_point_cloud):
+        """
+        チュートリアルにあった普通のpointnet
+        """
+        x = input_point_cloud
+        x = self.tnet(x, 3)
+        conv_layers_1 = self.params["conv_layers_1"]
+        for i in range(conv_layers_1):
+            conv_filters = self.params[f"conv_filters_1_{i}"]
+            x = self.conv_bn(x, conv_filters)
+        x = self.tnet(x, 32)
+        conv_layers_2 = self.params["conv_layers_2"]
+        for i in range(conv_layers_2):
+            conv_filters = self.params[f"conv_filters_2_{i}"]
+            x = self.conv_bn(x, conv_filters)
+        return GlobalMaxPooling1D()(x)
+    
     def simplified_pointnet(self, input_point_cloud):
         """
         単純PointNet
@@ -391,3 +408,8 @@ class PointNet(MachineLearningModel):
         )
 
         return history
+    
+    def predict(self, X):
+        # モデルを使用して予測するときにindexを元データと揃えておかないとmean_squared_errorを計算するときにNanとなりerrorが起きる
+        y_pred = pd.DataFrame(self.model.predict(X), index=X["meta"].index)
+        return y_pred

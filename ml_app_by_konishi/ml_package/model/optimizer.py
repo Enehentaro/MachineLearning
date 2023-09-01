@@ -28,7 +28,7 @@ class Objective(object):
         # Clear clutter from previous Keras session graphs.
         clear_session()
 
-        if self.model_name.casefold() == "MLP".casefold():
+        if self.model_name == "mlp":
             params = {
                 "input_dropout" : trial.suggest_float("input_dropout", 0.0, 0.2, step=0.05),
                 "hidden_layers" : trial.suggest_int("hidden_layers", 3, 10),
@@ -43,7 +43,7 @@ class Objective(object):
             }
             model = define_model.MLP(params)
 
-        elif self.model_name.casefold() == "XGB".casefold():
+        elif self.model_name == "xgb":
             params = {
                 "max_depth" : trial.suggest_int("max_depth", 1, 10),
                 "min_child_weight" : trial.suggest_int("min_child_weight", 1, 5),
@@ -61,7 +61,7 @@ class Objective(object):
             }
             model = xgb.XGBRegressor(**params)
 
-        elif self.model_name.casefold() == "PointNet".casefold():
+        elif self.model_name == "pointnet":
             params = {
                 "dense_layers" : trial.suggest_int('dense_layers', 0, 4, step=1),
                 "activation" : trial.suggest_categorical('activation', ["relu", "leaky_relu", "elu"]), 
@@ -87,37 +87,46 @@ class Objective(object):
         
         scores = []
         metrics = ["neg_mean_squared_error", "neg_mean_absolute_error"]
-        kf = KFold(n_splits=self.n_splits, shuffle=True, random_state=1)
-        for _, (train_index, test_index) in enumerate(kf.split(X=self.X, y=self.y)):
-            if self.model_name.casefold() == "MLP".casefold():
-                history = model.fit(
-                    tr_X=self.X.iloc[train_index], 
-                    tr_y=self.y.iloc[train_index], 
-                    va_X=self.X.iloc[test_index], 
-                    va_y=self.y.iloc[test_index]
-                )
-                #履歴の最後の１０エポック
-                val_loss_list = history.history['val_loss'][-10:]
-                loss_max = np.max(val_loss_list) #終盤の誤差の最大値（振動抑制が目的）
-                scores.append(loss_max)
 
-            elif self.model_name.casefold() == "PointNet".casefold():
-                history = model.fit(
-                    tr_X=self.X.iloc[train_index], 
-                    tr_y=self.y.iloc[train_index], 
-                    va_X=self.X.iloc[test_index], 
-                    va_y=self.y.iloc[test_index]
-                )
-                #履歴の最後の１０エポック
-                val_loss_list = history.history['val_loss'][-10:]
-                loss_max = np.max(val_loss_list) #終盤の誤差の最大値（振動抑制が目的）
-                scores.append(loss_max)
+        if self.split_method == "random":
+            kf = KFold(n_splits=self.n_splits, shuffle=True, random_state=1)
+            for train_index, test_index in kf.split(
+                X=self.X["meta"] if self.model_name == "pointnet" else self.X
+            ):
+                if self.model_name == "mlp":
+                    history = model.fit(
+                        tr_X=self.X.iloc[train_index], 
+                        tr_y=self.y.iloc[train_index], 
+                        va_X=self.X.iloc[test_index], 
+                        va_y=self.y.iloc[test_index]
+                    )
+                    #履歴の最後の１０エポック
+                    val_loss_list = history.history['val_loss'][-10:]
+                    loss_max = np.max(val_loss_list) #終盤の誤差の最大値（振動抑制が目的）
+                    scores.append(loss_max)
 
+                elif self.model_name == "pointnet":
+                    train_meta = self.X["meta"].iloc[train_index]
+                    train_point_cloud = np.array(self.X["point_cloud"])[train_index]
+                    test_meta = self.X["meta"].iloc[test_index]
+                    test_point_cloud = np.array(self.X["point_cloud"])[test_index]
+                    tr_X = {"meta":train_meta, "point_cloud":train_point_cloud}
+                    va_X = {"meta":test_meta, "point_cloud":test_point_cloud}
+                    history = model.fit(
+                        tr_X=tr_X,
+                        tr_y=self.y.iloc[train_index], 
+                        va_X=va_X, 
+                        va_y=self.y.iloc[test_index]
+                    )
+                    #履歴の最後の１０エポック
+                    val_loss_list = history.history['val_loss'][-10:]
+                    loss_max = np.max(val_loss_list) #終盤の誤差の最大値（振動抑制が目的）
+                    scores.append(loss_max)
 
-            elif self.model_name == "XGB":
-                model.fit(X=self.X.iloc[train_index], y=self.y.iloc[train_index])
-                validate_pred = model.predict(self.X.iloc[test_index])
-                scores.append(mean_squared_error(self.y.iloc[test_index], validate_pred))
+                elif self.model_name == "xgb":
+                    model.fit(X=self.X.iloc[train_index], y=self.y.iloc[train_index])
+                    validate_pred = model.predict(self.X.iloc[test_index])
+                    scores.append(mean_squared_error(self.y.iloc[test_index], validate_pred))
 
-            self.bar.update(1)
+                self.bar.update(1)
         return np.mean(scores)

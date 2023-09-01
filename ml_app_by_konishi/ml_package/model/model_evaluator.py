@@ -3,11 +3,12 @@ Define model evaluator
 """
 import re
 
+import tensorflow as tf
+from tensorflow import keras
 import optuna
 import pandas as pd
 from sklearn.metrics import mean_absolute_error
 from sklearn.metrics import mean_squared_error
-import xgboost as xgb
 
 from ml_package.model import data_manager
 from ml_package.model import define_model
@@ -66,19 +67,27 @@ class OptunaEvaluator(Evaluator):
 
         #決定したハイパーパラメータを使用して全訓練データで学習，評価
         #最適化結果から使ってみたいパラメータを選んでみた
-        if self.model_name == "MLP":
+        if self.model_name == "mlp":
             best_model = define_model.MLP(use_params)
-            history = best_model.fit(
-                tr_X=self.tr_X, tr_y=self.tr_y,
-                va_X=self.va_X, va_y=self.va_y,
-                verbose=1
-            )
+        elif self.model_name == "pointnet":
+            best_model = define_model.PointNet(use_params)
 
-            train_pred = best_model.predict(self.tr_X)
-            test_pred = best_model.predict(self.va_X)
-            print("テストデータを用いた結果")
-            print(f"loss train score:{mean_squared_error(self.tr_y, train_pred, squared=False)}")
-            print(f"loss test score:{mean_squared_error(self.va_y, test_pred, squared=False)}")
+        keras.utils.plot_model(
+            best_model, 
+            show_shapes=True, 
+            to_file="/mnt/MachineLearning/ml_app_by_konishi/result/image/"
+        )
+        history = best_model.fit(
+            tr_X=self.tr_X, tr_y=self.tr_y,
+            va_X=self.va_X, va_y=self.va_y,
+            verbose=1
+        )
 
-            # test_dict = {}
-            # test_dict[test_office] = {"best_trial":best_trial, "history":history}
+        train_pred = best_model.predict(self.tr_X)
+        test_pred = best_model.predict(self.va_X)
+        print("テストデータを用いた結果")
+        print(f"loss train score:{mean_squared_error(self.tr_y, train_pred, squared=False)}")
+        print(f"loss test score:{mean_squared_error(self.va_y, test_pred, squared=False)}")
+
+        # test_dict = {}
+        # test_dict[test_office] = {"best_trial":best_trial, "history":history}
