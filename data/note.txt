@@ -16,3 +16,18 @@ summary_20230105.csvについて：
     countTimeMean_sit:座っている人の口高さでの飛沫観測数時間平均
     countTimeMean_sit2stand:座っている人の口高さから立っている人の口高さまでの範囲の飛沫観測数時間平均
     countTimeMean_exceptDesk:座っている人の口高さから立っている人の口高さまでの範囲で、感染者の机の上以外における飛沫観測数時間平均
+    
+summary_20230112.csvについて：
+    countTimeMean_onlyFloating:時刻0.1秒以降にカウントされた座っている人の口高さから立っている人の口高さまでの範囲での浮遊飛沫観測数時間平均
+
+summary_20230418.csvについて：
+    人の座標を追加
+    countTimeMean_onlyFloating:時刻0.1秒以降にカウントされた座っている人の口高さから立っている人の口高さまでの範囲での浮遊飛沫観測数時間平均
+    
+summary_20230822.csvについて：
+    富岳で計算するためにモデル化したscan1についての計算結果を追加
+    countTimeMean_onlyFloating:時刻0.1秒以降にカウントされた座っている人の口高さから立っている人の口高さまでの範囲での浮遊飛沫観測数時間平均
+
+squeeze_target.csvについて：
+    ○_patient:その人が感染者かどうかを表す0-1ベクトル
+    countTimeMean_onlyFloating:時刻0.1秒以降にカウントされた座っている人の口高さから立っている人の口高さまでの範囲での浮遊飛沫観測数時間平均 (一人ずつ)
