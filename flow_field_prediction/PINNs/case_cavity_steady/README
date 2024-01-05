@@ -1,0 +1,10 @@
+# case_cavity_steady_miss.ipynb
+	First prediction for 2D cavity flow.
+	This result is not strict.
+
+# case_cavity_steady.ipynb
+	This result is best prediction for 2D cavity flow.
+
+# case_cavity_steady_art.ipynb
+	One of the mistakes of PINNs.
+	This result contains many errors, but is creative like art.
