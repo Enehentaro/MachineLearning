@@ -388,7 +388,7 @@ class PointNet(MachineLearningModel):
         # 学習時の設定
         max_epoch = 400
         # callbackの作成．今のところearlystoppingとtensorboardのみ実装
-        patience = 100
+        patience = 30
         if callback_type == "early_stopping":
             callbacks = [EarlyStopping(monitor="val_mae", patience=patience, verbose=verbose, restore_best_weights=False)]
         elif callback_type == "both":

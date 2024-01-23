@@ -1,6 +1,7 @@
 from keras.backend import clear_session
 import numpy as np
 from sklearn.model_selection import KFold
+from sklearn.model_selection import StratifiedKFold
 from sklearn.metrics import mean_squared_error
 from tqdm.autonotebook import tqdm
 import xgboost as xgb
@@ -19,7 +20,7 @@ class Objective(object):
         self.split_method = split_method
         self.X = X
         self.y = y
-        self.n_splits = 5
+        self.n_splits = 6
         # tqdm関連の設定
         self.bar = tqdm(total=n_trials*self.n_splits)
         self.bar.set_description("optimizing progress") 
@@ -64,7 +65,7 @@ class Objective(object):
         elif self.model_name == "pointnet":
             params = {
                 "dense_layers" : trial.suggest_int('dense_layers', 0, 4, step=1),
-                "activation" : trial.suggest_categorical('activation', ["relu", "leaky_relu", "elu"]), 
+                "activation" : trial.suggest_categorical('activation', ["relu", "leaky_relu"]), 
                 "dropout" : trial.suggest_categorical('dropout', [0.0, 0.3, 0.5]),
                 "conv_layers" : trial.suggest_int('conv_layers', 1, 3, step=1),
                 "optimizer_lr" : trial.suggest_float('optimizer_lr', 1e-5, 1e-1, log=True),
@@ -90,9 +91,13 @@ class Objective(object):
 
         if self.split_method == "random":
             kf = KFold(n_splits=self.n_splits, shuffle=True, random_state=1)
-            for train_index, test_index in kf.split(
+            kf_splitter = kf.split(
                 X=self.X["meta"] if self.model_name == "pointnet" else self.X
-            ):
+            )
+        elif self.split_method == "stratified":
+            kf = StratifiedKFold(n_splits=self.n_splits, shuffle=True, random_state=42)
+            kf_splitter = kf.split(self.X["meta"], self.X["meta"]["office"])
+            for train_index, test_index in kf_splitter:
                 if self.model_name == "mlp":
                     history = model.fit(
                         tr_X=self.X.iloc[train_index], 
@@ -106,9 +111,12 @@ class Objective(object):
                     scores.append(loss_max)
 
                 elif self.model_name == "pointnet":
-                    train_meta = self.X["meta"].iloc[train_index]
+                    train_meta = self.X["meta"].copy()
+                    train_meta = train_meta.iloc[train_index].drop(columns="office", axis=1)
                     train_point_cloud = np.array(self.X["point_cloud"])[train_index]
-                    test_meta = self.X["meta"].iloc[test_index]
+                    test_meta = self.X["meta"].copy()
+                    test_meta = test_meta.iloc[test_index].drop(columns="office", axis=1)
+                    # test_meta = self.X["meta"].iloc[test_index]
                     test_point_cloud = np.array(self.X["point_cloud"])[test_index]
                     tr_X = {"meta":train_meta, "point_cloud":train_point_cloud}
                     va_X = {"meta":test_meta, "point_cloud":test_point_cloud}

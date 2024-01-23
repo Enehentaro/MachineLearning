@@ -24,11 +24,19 @@ def train_and_test_ml(model_name, split_method):
         train_explanatory_variable = \
             point_cloud_preprocessor.get_office_dataset(
                 df_core=train_explanatory_variable,
+                explanatory_variable_list=[
+                    "office", "aircon", "ventilation", 
+                    "exhaust_a", "exhaust_b", "exhaust_off"
+                ],
                 std=True
             )
         test_explanatory_variable = \
             point_cloud_preprocessor.get_office_dataset(
                 df_core=test_explanatory_variable,
+                explanatory_variable_list=[
+                    "office", "aircon", "ventilation", 
+                    "exhaust_a", "exhaust_b", "exhaust_off"
+                ],
                 std=True
             )
     else:
@@ -44,7 +52,7 @@ def train_and_test_ml(model_name, split_method):
         split_method=split_method,
         X=train_explanatory_variable, 
         y=train_objective_variable,
-        n_trials=500
+        n_trials=4
     )
 
     evaluator = model_evaluator.OptunaEvaluator(

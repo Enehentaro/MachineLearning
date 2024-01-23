@@ -110,12 +110,12 @@ class OptunaHyperparameterSearcher(HyperparameterSearcher):
             n_trials=n_trials
         )
         #計算資源があるときはランダムサーチ，無ければTPESampler
-        #storageのパスにすでにDBファイルがあれば，それを読み込むのがload_if_exists
-        #     study = optuna.create_study(directions=["minimize"], study_name=model_name+"_"+study_name[0],
-        #                                 sampler=optuna.samplers.TPESampler(), pruner=optuna.pruners.HyperbandPruner(),
-        #                                 storage=sqlite_path, load_if_exists=True)
+        # storageのパスにすでにDBファイルがあれば，それを読み込むのがload_if_exists
         study = optuna.create_study(directions=["minimize"], study_name=model_name+"_"+self.study_name,
-                                    sampler=optuna.samplers.RandomSampler(), pruner=optuna.pruners.MedianPruner(),
+                                    sampler=optuna.samplers.TPESampler(), pruner=optuna.pruners.HyperbandPruner(),
                                     storage=self.sqlite_path, load_if_exists=True)
+        # study = optuna.create_study(directions=["minimize"], study_name=model_name+"_"+self.study_name,
+        #                             sampler=optuna.samplers.RandomSampler(), pruner=optuna.pruners.MedianPruner(),
+        #                             storage=self.sqlite_path, load_if_exists=True)
         print(f"study name: {self.study_name}")
         study.optimize(objective, n_trials=n_trials, timeout=timeout)

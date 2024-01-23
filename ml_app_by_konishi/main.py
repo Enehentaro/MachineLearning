@@ -35,7 +35,7 @@ def argparser():
     )
     parser.add_argument(
         "-s", "--split_method", type=str, default="random",
-        help="Select train test split method. \"random\" or \"office\""
+        help="Select train test split method. \"random\" , \"office\" \"stratified\""
     )
     args = parser.parse_args()
     return args

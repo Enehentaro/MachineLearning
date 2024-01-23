@@ -125,6 +125,12 @@ class RoICsvDataModel(DataModel):
         ----------
         data : pd.DataFrame
             Data to be split. Data must have column["office"].
+
+        
+        Returns
+        -------
+        df_train, df_test : pd.DataFrame
+            各オフィスから3つずつ層化抽出したもの
         """
         df_test = pd.DataFrame()
         for office in data["office"].unique():
@@ -245,6 +251,20 @@ class RoICsvDataModel(DataModel):
                 test_explanatory_variable.sample(frac=1, random_state=1)
             test_objective_variable = \
                 test_objective_variable.reindex(index=test_explanatory_variable.index)
+        elif split_method == "stratified":
+            train_explanatory_variable, test_explanatory_variable = \
+                self.train_test_stratified_split_by_office(
+                    data=df_explanatory_variable
+                )
+            #shuffle data
+            train_explanatory_variable = \
+                train_explanatory_variable.sample(frac=1, random_state=1)
+            test_explanatory_variable = \
+                test_explanatory_variable.sample(frac=1, random_state=1)
+            train_objective_variable = \
+                df_objective_variable.loc[train_explanatory_variable.index]
+            test_objective_variable = \
+                df_objective_variable.loc[test_explanatory_variable.index]
 
         return train_explanatory_variable, test_explanatory_variable, \
                train_objective_variable, test_objective_variable
