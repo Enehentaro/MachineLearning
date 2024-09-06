@@ -11,6 +11,6 @@ PINNsの円柱流れに対する適用
 低レイノルズ数（Re〜30）において非定常NS方程式を解いたケース
 
 ## vertificate_ExpertGuide
-AN EXPERT’S GUIDE TO TRAINING PHYSICS-INFORMED NEURAL NETWORKS（https://arxiv.org/abs/2308.08468）の検証
-↑は世界で初めて(観測データを用いない形で)PINNsによるカルマン渦の観測に成功したとされている論文
+AN EXPERT’S GUIDE TO TRAINING PHYSICS-INFORMED NEURAL NETWORKS（https://arxiv.org/abs/2308.08468）の検証  
+↑は世界で初めて(観測データを用いない形で)PINNsによるカルマン渦の観測に成功したとされている論文  
 Re=100 において非定常NS方程式を解いたケース
